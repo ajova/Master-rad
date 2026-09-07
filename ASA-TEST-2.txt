@@ -1,0 +1,86 @@
+Edge-FW# =~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2026.08.17 23:12:58 =~=~=~=~=~=~=~=~=~=~=~=
+Edge-FW# clear log buffer 
+Edge-FW# sh log
+Syslog logging: enabled
+    Facility: 20
+    Timestamp logging: enabled
+    Timezone: enabled
+    Logging Format: disabled
+    Hide Username logging: enabled
+    Standby logging: disabled
+    Debug-trace logging: disabled
+    Console logging: level warnings, 461 messages logged
+    Monitor logging: disabled
+    Buffer logging: level informational, 23949 messages logged
+    Trap logging: level informational, facility 20, 23949 messages logged
+    Global TCP syslog stats::
+        NOT_PUTABLE: 0, ALL_CHANNEL_DOWN: 0
+        CHANNEL_FLAP_CNT: 0, SYSLOG_PKT_LOSS: 0
+        PARTIAL_REWRITE_CNT: 0
+    Permit-hostdown logging: disabled
+    History logging: disabled
+    Device ID: hostname "Edge-FW"
+    Mail logging: disabled
+    ASDM logging: disabled
+Aug 17 2026 23:12:46 Edge-FW : %ASA-5-111008: User 'enable_15' executed the 'clear logging buffer' command.
+Aug 17 2026 23:12:46 Edge-FW : %ASA-5-111010: User 'enable_15', running 'CLI' from IP 0.0.0.0, executed 'clear logging buffer'
+Edge-FW# Aug 17 2026 23:13:25 Edge-FW : %ASA-3-710003: TCP access denied by ACL from 185.92.100.1/55185 to OUTSIDE:185.92.100.2/80
+Aug 17 2026 23:13:26 Edge-FW : %ASA-3-710003: TCP access denied by ACL from 185.92.100.1/55187 to OUTSIDE:185.92.100.2/80
+Aug 17 2026 23:13:26 Edge-FW : %ASA-3-710003: TCP access denied by ACL from 185.92.100.1/55185 to OUTSIDE:185.92.100.2/23
+Aug 17 2026 23:13:26 Edge-FW : %ASA-3-710003: TCP access denied by ACL from 185.92.100.1/55187 to OUTSIDE:185.92.100.2/23
+Aug 17 2026 23:13:26 Edge-FW : %ASA-3-710003: TCP access denied by ACL from 185.92.100.1/55185 to OUTSIDE:185.92.100.2/443
+Aug 17 2026 23:13:26 Edge-FW : %ASA-3-710003: TCP access denied by ACL from 185.92.100.1/55185 to OUTSIDE:185.92.100.2/22
+Aug 17 2026 23:13:26 Edge-FW : %ASA-3-710003: TCP access denied by ACL from 185.92.100.1/55187 to OUTSIDE:185.92.100.2/22
+Aug 17 2026 23:13:26 Edge-FW : %ASA-3-710003: TCP access denied by ACL from 185.92.100.1/55187 to OUTSIDE:185.92.100.2/443
+Aug 17 2026 23:13:35 Edge-FW : %ASA-4-733100: [ Scanning] drop rate-1 exceeded. Current burst rate is 45 per second, max configured rate is 10; Current average rate is 4 per second, max configured rate is 5; Cumulative total count is 2906
+Aug 17 2026 23:13:41 Edge-FW : %ASA-3-710003: TCP access denied by ACL from 185.92.100.1/55185 to OUTSIDE:185.92.100.2/161
+Aug 17 2026 23:13:41 Edge-FW : %ASA-3-710003: TCP access denied by ACL from 185.92.100.1/55187 to OUTSIDE:185.92.100.2/161
+Aug 17 2026 23:13:45 Edge-FW : %ASA-4-733100: [ Scanning] drop rate-2 exceeded. Current burst rate is 15 per second, max configured rate is 8; Current average rate is 1 per second, max configured rate is 4; Cumulative total count is 3984
+
+Edge-FW# 
+Edge-FW# 
+Edge-FW# 
+Edge-FW# sh logAug 17 2026 23:13:55 Edge-FW : %ASA-4-733100: [ Scanning] drop rate-1 exceeded. Current burst rate is 4 per second, max configured rate is 10; Current average rate is 6 per second, max configured rate is 5; Cumulative total count is 3990
+
+Syslog logging: enabled
+    Facility: 20
+    Timestamp logging: enabled
+    Timezone: enabled
+    Logging Format: disabled
+    Hide Username logging: enabled
+    Standby logging: disabled
+    Debug-trace logging: disabled
+    Console logging: level warnings, 474 messages logged
+    Monitor logging: disabled
+    Buffer logging: level informational, 23965 messages logged
+    Trap logging: level informational, facility 20, 23965 messages logged
+    Global TCP syslog stats::
+        NOT_PUTABLE: 0, ALL_CHANNEL_DOWN: 0
+        CHANNEL_FLAP_CNT: 0, SYSLOG_PKT_LOSS: 0
+        PARTIAL_REWRITE_CNT: 0
+    Permit-hostdown logging: disabled
+    History logging: disabled
+    Device ID: hostname "Edge-FW"
+    Mail logging: disabled
+    ASDM logging: disabled
+Aug 17 2026 23:12:46 Edge-FW : %ASA-5-111008: User 'enable_15' executed the 'clear logging buffer' command.
+Aug 17 2026 23:12:46 Edge-FW : %ASA-5-111010: User 'enable_15', running 'CLI' from IP 0.0.0.0, executed 'clear logging buffer'
+Aug 17 2026 23:13:25 Edge-FW : %ASA-3-710003: TCP access denied by ACL from 185.92.100.1/55185 to OUTSIDE:185.92.100.2/80
+Aug 17 2026 23:13:26 Edge-FW : %ASA-3-710003: TCP access denied by ACL from 185.92.100.1/55187 to OUTSIDE:185.92.100.2/80
+Aug 17 2026 23:13:26 Edge-FW : %ASA-3-710003: TCP access denied by ACL from 185.92.100.1/55185 to OUTSIDE:185.92.100.2/23
+Aug 17 2026 23:13:26 Edge-FW : %ASA-3-710003: TCP access denied by ACL from 185.92.100.1/55187 to OUTSIDE:185.92.100.2/23
+Aug 17 2026 23:13:26 Edge-FW : %ASA-3-710003: TCP access denied by ACL from 185.92.100.1/55185 to OUTSIDE:185.92.100.2/443
+Aug 17 2026 23:13:26 Edge-FW : %ASA-3-710003: TCP access denied by ACL from 185.92.100.1/55185 to OUTSIDE:185.92.100.2/22
+Aug 17 2026 23:13:26 Edge-FW : %ASA-3-710003: TCP access denied by ACL from 185.92.100.1/55187 to OUTSIDE:185.92.100.2/22
+Aug 17 2026 23:13:26 Edge-FW : %ASA-3-710003: TCP access denied by ACL from 185.92.100.1/55187 to OUTSIDE:185.92.100.2/443
+Aug 17 2026 23:13:27 Edge-FW : %ASA-6-106100: access-list LANUSERS_IN permitted udp LANUSERS/10.1.1.51(58526) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0xf12a91a2, 0x00000000]
+Aug 17 2026 23:13:27 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9955 for LANUSERS:10.1.1.51/58526 (10.1.1.51/58526) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 23:13:28 Edge-FW : %ASA-6-302016: Teardown UDP connection 9955 for LANUSERS:10.1.1.51/58526 to INSIDE:10.2.1.10/53 duration 0:00:00 bytes 139 -1 -1
+Aug 17 2026 23:13:35 Edge-FW : %ASA-4-733100: [ Scanning] drop rate-1 exceeded. Current burst rate is 45 per second, max configured rate is 10; Current average rate is 4 per second, max configured rate is 5; Cumulative total count is 2906
+Aug 17 2026 23:13:41 Edge-FW : %ASA-3-710003: TCP access denied by ACL from 185.92.100.1/55185 to OUTSIDE:185.92.100.2/161
+Aug 17 2026 23:13:41 Edge-FW : %ASA-3-710003: TCP access denied by ACL from 185.92.100.1/55187 to OUTSIDE:185.92.100.2/161
+Aug 17 2026 23:13:45 Edge-FW : %ASA-4-733100: [ Scanning] drop rate-2 exceeded. Current burst rate is 15 per second, max configured rate is 8; Current average rate is 1 per second, max configured rate is 4; Cumulative total count is 3984
+Aug 17 2026 23:13:55 Edge-FW : %ASA-4-733100: [ Scanning] drop rate-1 exceeded. Current burst rate is 4 per second, max configured rate is 10; Current average rate is 6 per second, max configured rate is 5; Cumulative total count is 3990
+Edge-FW# 
+Edge-FW# 
+Edge-FW# 

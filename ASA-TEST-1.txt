@@ -1,0 +1,603 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2026.08.17 22:42:24 =~=~=~=~=~=~=~=~=~=~=~=
+Edge-FW# sh logg
+Syslog logging: enabled
+    Facility: 20
+    Timestamp logging: enabled
+    Timezone: enabled
+    Logging Format: disabled
+    Hide Username logging: enabled
+    Standby logging: disabled
+    Debug-trace logging: disabled
+    Console logging: level warnings, 448 messages logged
+    Monitor logging: disabled
+    Buffer logging: level informational, 23852 messages logged
+    Trap logging: level informational, facility 20, 23852 messages logged
+    Global TCP syslog stats::
+        NOT_PUTABLE: 0, ALL_CHANNEL_DOWN: 0
+        CHANNEL_FLAP_CNT: 0, SYSLOG_PKT_LOSS: 0
+        PARTIAL_REWRITE_CNT: 0
+    Permit-hostdown logging: disabled
+    History logging: disabled
+    Device ID: hostname "Edge-FW"
+    Mail logging: disabled
+    ASDM logging: disabled
+Aug 17 2026 22:39:45 Edge-FW : %ASA-5-111008: User 'enable_15' executed the 'clear logging buffer' command.
+Aug 17 2026 22:39:45 Edge-FW : %ASA-5-111010: User 'enable_15', running 'CLI' from IP 0.0.0.0, executed 'clear logging buffer'
+Aug 17 2026 22:41:10 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47621) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:10 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9752 for OUTSIDE:185.92.100.1/47621 (185.92.100.1/47621) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:10 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47621) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:41:10 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9753 for OUTSIDE:185.92.100.1/47621 (185.92.100.1/47621) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:41:10 Edge-FW : %ASA-6-302014: Teardown TCP connection 9752 for OUTSIDE:185.92.100.1/47621 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:10 Edge-FW : %ASA-6-302014: Teardown TCP connection 9753 for OUTSIDE:185.92.100.1/47621 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:11 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47626) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:11 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9754 for OUTSIDE:185.92.100.1/47626 (185.92.100.1/47626) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:12 Edge-FW : %ASA-6-302014: Teardown TCP connection 9754 for OUTSIDE:185.92.100.1/47626 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:13 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47628) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:13 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9755 for OUTSIDE:185.92.100.1/47628 (185.92.100.1/47628) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:13 Edge-FW : %ASA-6-302014: Teardown TCP connection 9755 for OUTSIDE:185.92.100.1/47628 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:14 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47630) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:14 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9756 for OUTSIDE:185.92.100.1/47630 (185.92.100.1/47630) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:14 Edge-FW : %ASA-6-302014: Teardown TCP connection 9756 for OUTSIDE:185.92.100.1/47630 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:15 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(59795) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:41:15 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9757 for DMZ:10.0.1.10/59795 (10.0.1.10/59795) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:41:15 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47632) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:15 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9758 for OUTSIDE:185.92.100.1/47632 (185.92.100.1/47632) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:15 Edge-FW : %ASA-6-302014: Teardown TCP connection 9758 for OUTSIDE:185.92.100.1/47632 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:17 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47634) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:17 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9759 for OUTSIDE:185.92.100.1/47634 (185.92.100.1/47634) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:17 Edge-FW : %ASA-6-302014: Teardown TCP connection 9759 for OUTSIDE:185.92.100.1/47634 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:18 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(63948) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:41:18 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9760 for DMZ:10.0.1.10/63948 (10.0.1.10/63948) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:41:18 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47636) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:18 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9761 for OUTSIDE:185.92.100.1/47636 (185.92.100.1/47636) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:18 Edge-FW : %ASA-6-302014: Teardown TCP connection 9761 for OUTSIDE:185.92.100.1/47636 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:19 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47638) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:19 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9762 for OUTSIDE:185.92.100.1/47638 (185.92.100.1/47638) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:19 Edge-FW : %ASA-6-302014: Teardown TCP connection 9762 for OUTSIDE:185.92.100.1/47638 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:20 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47640) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:20 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9763 for OUTSIDE:185.92.100.1/47640 (185.92.100.1/47640) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:20 Edge-FW : %ASA-6-302014: Teardown TCP connection 9763 for OUTSIDE:185.92.100.1/47640 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:22 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47642) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:22 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9764 for OUTSIDE:185.92.100.1/47642 (185.92.100.1/47642) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:22 Edge-FW : %ASA-6-302014: Teardown TCP connection 9764 for OUTSIDE:185.92.100.1/47642 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:23 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47644) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:23 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9765 for OUTSIDE:185.92.100.1/47644 (185.92.100.1/47644) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:23 Edge-FW : %ASA-6-302014: Teardown TCP connection 9765 for OUTSIDE:185.92.100.1/47644 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:23 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(50447) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:41:23 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9766 for DMZ:10.0.1.10/50447 (10.0.1.10/50447) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:41:24 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47646) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:24 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9767 for OUTSIDE:185.92.100.1/47646 (185.92.100.1/47646) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:24 Edge-FW : %ASA-6-302014: Teardown TCP connection 9767 for OUTSIDE:185.92.100.1/47646 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:25 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47648) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:25 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9768 for OUTSIDE:185.92.100.1/47648 (185.92.100.1/47648) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:25 Edge-FW : %ASA-6-302014: Teardown TCP connection 9768 for OUTSIDE:185.92.100.1/47648 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:27 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(58991) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:41:27 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9769 for DMZ:10.0.1.10/58991 (10.0.1.10/58991) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:41:27 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(61795) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:41:27 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9770 for DMZ:10.0.1.10/61795 (10.0.1.10/61795) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:41:27 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47650) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:27 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9771 for OUTSIDE:185.92.100.1/47650 (185.92.100.1/47650) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:27 Edge-FW : %ASA-6-302014: Teardown TCP connection 9771 for OUTSIDE:185.92.100.1/47650 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:27 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(60987) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:41:27 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9772 for DMZ:10.0.1.10/60987 (10.0.1.10/60987) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:41:27 Edge-FW : %ASA-6-302016: Teardown UDP connection 9757 for DMZ:10.0.1.10/59795 to INSIDE:10.2.1.10/53 duration 0:00:12 bytes 192 -1 -1
+Aug 17 2026 22:41:28 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47652) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:28 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9773 for OUTSIDE:185.92.100.1/47652 (185.92.100.1/47652) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:28 Edge-FW : %ASA-6-302014: Teardown TCP connection 9773 for OUTSIDE:185.92.100.1/47652 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:29 Edge-FW : %ASA-6-302016: Teardown UDP connection 9760 for DMZ:10.0.1.10/63948 to INSIDE:10.2.1.10/53 duration 0:00:11 bytes 204 -1 -1
+Aug 17 2026 22:41:29 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47654) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:29 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9774 for OUTSIDE:185.92.100.1/47654 (185.92.100.1/47654) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:29 Edge-FW : %ASA-6-302014: Teardown TCP connection 9774 for OUTSIDE:185.92.100.1/47654 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:30 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47656) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:30 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9775 for OUTSIDE:185.92.100.1/47656 (185.92.100.1/47656) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:30 Edge-FW : %ASA-6-302014: Teardown TCP connection 9775 for OUTSIDE:185.92.100.1/47656 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:32 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47658) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:32 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9776 for OUTSIDE:185.92.100.1/47658 (185.92.100.1/47658) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:32 Edge-FW : %ASA-6-302014: Teardown TCP connection 9776 for OUTSIDE:185.92.100.1/47658 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:33 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47660) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:33 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9777 for OUTSIDE:185.92.100.1/47660 (185.92.100.1/47660) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:33 Edge-FW : %ASA-6-302014: Teardown TCP connection 9777 for OUTSIDE:185.92.100.1/47660 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:34 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47662) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:34 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9778 for OUTSIDE:185.92.100.1/47662 (185.92.100.1/47662) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:34 Edge-FW : %ASA-6-302014: Teardown TCP connection 9778 for OUTSIDE:185.92.100.1/47662 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:35 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(53388) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:41:35 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9779 for DMZ:10.0.1.10/53388 (10.0.1.10/53388) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:41:36 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47664) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:36 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9780 for OUTSIDE:185.92.100.1/47664 (185.92.100.1/47664) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:36 Edge-FW : %ASA-6-302014: Teardown TCP connection 9780 for OUTSIDE:185.92.100.1/47664 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:36 Edge-FW : %ASA-6-302016: Teardown UDP connection 9779 for DMZ:10.0.1.10/53388 to INSIDE:10.2.1.10/53 duration 0:00:01 bytes 88 -1 -1
+Aug 17 2026 22:41:36 Edge-FW : %ASA-6-302016: Teardown UDP connection 9766 for DMZ:10.0.1.10/50447 to INSIDE:10.2.1.10/53 duration 0:00:13 bytes 264 -1 -1
+Aug 17 2026 22:41:37 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47666) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:37 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9781 for OUTSIDE:185.92.100.1/47666 (185.92.100.1/47666) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:37 Edge-FW : %ASA-6-302014: Teardown TCP connection 9781 for OUTSIDE:185.92.100.1/47666 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:38 Edge-FW : %ASA-6-302016: Teardown UDP connection 9769 for DMZ:10.0.1.10/58991 to INSIDE:10.2.1.10/53 duration 0:00:11 bytes 294 -1 -1
+Aug 17 2026 22:41:38 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47668) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:38 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9782 for OUTSIDE:185.92.100.1/47668 (185.92.100.1/47668) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:38 Edge-FW : %ASA-6-302014: Teardown TCP connection 9782 for OUTSIDE:185.92.100.1/47668 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:39 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9783 for DMZ:10.0.1.10/53388 (10.0.1.10/53388) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:41:39 Edge-FW : %ASA-6-302016: Teardown UDP connection 9770 for DMZ:10.0.1.10/61795 to INSIDE:10.2.1.10/53 duration 0:00:12 bytes 346 -1 -1
+Aug 17 2026 22:41:39 Edge-FW : %ASA-6-302016: Teardown UDP connection 9772 for DMZ:10.0.1.10/60987 to INSIDE:10.2.1.10/53 duration 0:00:12 bytes 312 -1 -1
+Aug 17 2026 22:41:39 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47670) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:39 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9784 for OUTSIDE:185.92.100.1/47670 (185.92.100.1/47670) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:39 Edge-FW : %ASA-6-302014: Teardown TCP connection 9784 for OUTSIDE:185.92.100.1/47670 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:41 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47672) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:41 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9785 for OUTSIDE:185.92.100.1/47672 (185.92.100.1/47672) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:41 Edge-FW : %ASA-6-302014: Teardown TCP connection 9785 for OUTSIDE:185.92.100.1/47672 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:42 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47674) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:42 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9786 for OUTSIDE:185.92.100.1/47674 (185.92.100.1/47674) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:42 Edge-FW : %ASA-6-302014: Teardown TCP connection 9786 for OUTSIDE:185.92.100.1/47674 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:43 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47676) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:43 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9787 for OUTSIDE:185.92.100.1/47676 (185.92.100.1/47676) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:43 Edge-FW : %ASA-6-302014: Teardown TCP connection 9787 for OUTSIDE:185.92.100.1/47676 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:44 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47678) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:44 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9788 for OUTSIDE:185.92.100.1/47678 (185.92.100.1/47678) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:44 Edge-FW : %ASA-6-302014: Teardown TCP connection 9788 for OUTSIDE:185.92.100.1/47678 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:46 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47680) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:46 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9789 for OUTSIDE:185.92.100.1/47680 (185.92.100.1/47680) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:46 Edge-FW : %ASA-6-302014: Teardown TCP connection 9789 for OUTSIDE:185.92.100.1/47680 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:47 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47682) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:47 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9790 for OUTSIDE:185.92.100.1/47682 (185.92.100.1/47682) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:47 Edge-FW : %ASA-6-302014: Teardown TCP connection 9790 for OUTSIDE:185.92.100.1/47682 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:48 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47684) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:48 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9791 for OUTSIDE:185.92.100.1/47684 (185.92.100.1/47684) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:48 Edge-FW : %ASA-6-302014: Teardown TCP connection 9791 for OUTSIDE:185.92.100.1/47684 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:49 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47686) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:49 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9792 for OUTSIDE:185.92.100.1/47686 (185.92.100.1/47686) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:49 Edge-FW : %ASA-6-302014: Teardown TCP connection 9792 for OUTSIDE:185.92.100.1/47686 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:50 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(62499) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:41:50 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9793 for DMZ:10.0.1.10/62499 (10.0.1.10/62499) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:41:51 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47688) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:51 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9794 for OUTSIDE:185.92.100.1/47688 (185.92.100.1/47688) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:51 Edge-FW : %ASA-6-302014: Teardown TCP connection 9794 for OUTSIDE:185.92.100.1/47688 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:51 Edge-FW : %ASA-6-302016: Teardown UDP connection 9783 for DMZ:10.0.1.10/53388 to INSIDE:10.2.1.10/53 duration 0:00:12 bytes 192 -1 -1
+Aug 17 2026 22:41:52 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47690) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:52 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9795 for OUTSIDE:185.92.100.1/47690 (185.92.100.1/47690) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:52 Edge-FW : %ASA-6-302014: Teardown TCP connection 9795 for OUTSIDE:185.92.100.1/47690 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:53 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47692) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:53 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9796 for OUTSIDE:185.92.100.1/47692 (185.92.100.1/47692) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:53 Edge-FW : %ASA-6-302014: Teardown TCP connection 9796 for OUTSIDE:185.92.100.1/47692 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:54 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47694) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:54 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9797 for OUTSIDE:185.92.100.1/47694 (185.92.100.1/47694) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:54 Edge-FW : %ASA-6-302014: Teardown TCP connection 9797 for OUTSIDE:185.92.100.1/47694 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:56 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47696) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:56 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9798 for OUTSIDE:185.92.100.1/47696 (185.92.100.1/47696) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:56 Edge-FW : %ASA-6-302014: Teardown TCP connection 9798 for OUTSIDE:185.92.100.1/47696 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:57 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47698) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:57 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9799 for OUTSIDE:185.92.100.1/47698 (185.92.100.1/47698) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:57 Edge-FW : %ASA-6-302014: Teardown TCP connection 9799 for OUTSIDE:185.92.100.1/47698 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:58 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47700) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:58 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9800 for OUTSIDE:185.92.100.1/47700 (185.92.100.1/47700) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:58 Edge-FW : %ASA-6-302014: Teardown TCP connection 9800 for OUTSIDE:185.92.100.1/47700 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:41:59 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47702) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:41:59 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9801 for OUTSIDE:185.92.100.1/47702 (185.92.100.1/47702) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:41:59 Edge-FW : %ASA-6-302014: Teardown TCP connection 9801 for OUTSIDE:185.92.100.1/47702 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:01 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47704) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:01 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9802 for OUTSIDE:185.92.100.1/47704 (185.92.100.1/47704) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:01 Edge-FW : %ASA-6-302014: Teardown TCP connection 9802 for OUTSIDE:185.92.100.1/47704 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:02 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47706) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:02 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9803 for OUTSIDE:185.92.100.1/47706 (185.92.100.1/47706) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:02 Edge-FW : %ASA-6-302014: Teardown TCP connection 9803 for OUTSIDE:185.92.100.1/47706 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:02 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(52063) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:42:02 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9804 for DMZ:10.0.1.10/52063 (10.0.1.10/52063) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:42:03 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47708) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:03 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9805 for OUTSIDE:185.92.100.1/47708 (185.92.100.1/47708) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:03 Edge-FW : %ASA-6-302014: Teardown TCP connection 9805 for OUTSIDE:185.92.100.1/47708 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:03 Edge-FW : %ASA-6-302016: Teardown UDP connection 9793 for DMZ:10.0.1.10/62499 to INSIDE:10.2.1.10/53 duration 0:00:13 bytes 312 -1 -1
+Aug 17 2026 22:42:04 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47710) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:04 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9806 for OUTSIDE:185.92.100.1/47710 (185.92.100.1/47710) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:04 Edge-FW : %ASA-6-302014: Teardown TCP connection 9806 for OUTSIDE:185.92.100.1/47710 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:06 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47712) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:06 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9807 for OUTSIDE:185.92.100.1/47712 (185.92.100.1/47712) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:06 Edge-FW : %ASA-6-302014: Teardown TCP connection 9807 for OUTSIDE:185.92.100.1/47712 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:06 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(54026) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:42:06 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9808 for DMZ:10.0.1.10/54026 (10.0.1.10/54026) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:42:07 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47714) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:07 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9809 for OUTSIDE:185.92.100.1/47714 (185.92.100.1/47714) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:07 Edge-FW : %ASA-6-302014: Teardown TCP connection 9809 for OUTSIDE:185.92.100.1/47714 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:08 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47716) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:08 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9810 for OUTSIDE:185.92.100.1/47716 (185.92.100.1/47716) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:08 Edge-FW : %ASA-6-302014: Teardown TCP connection 9810 for OUTSIDE:185.92.100.1/47716 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:09 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47718) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:09 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9811 for OUTSIDE:185.92.100.1/47718 (185.92.100.1/47718) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:09 Edge-FW : %ASA-6-302014: Teardown TCP connection 9811 for OUTSIDE:185.92.100.1/47718 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:11 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47720) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:11 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9812 for OUTSIDE:185.92.100.1/47720 (185.92.100.1/47720) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:11 Edge-FW : %ASA-6-302014: Teardown TCP connection 9812 for OUTSIDE:185.92.100.1/47720 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:12 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47722) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:12 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9813 for OUTSIDE:185.92.100.1/47722 (185.92.100.1/47722) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:12 Edge-FW : %ASA-6-302014: Teardown TCP connection 9813 for OUTSIDE:185.92.100.1/47722 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:13 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47724) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:13 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9814 for OUTSIDE:185.92.100.1/47724 (185.92.100.1/47724) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:13 Edge-FW : %ASA-6-302014: Teardown TCP connection 9814 for OUTSIDE:185.92.100.1/47724 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:14 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(59774) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:42:14 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9815 for DMZ:10.0.1.10/59774 (10.0.1.10/59774) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:42:14 Edge-FW : %ASA-6-302016: Teardown UDP connection 9804 for DMZ:10.0.1.10/52063 to INSIDE:10.2.1.10/53 duration 0:00:11 bytes 192 -1 -1
+Aug 17 2026 22:42:14 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47726) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:14 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9816 for OUTSIDE:185.92.100.1/47726 (185.92.100.1/47726) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:14 Edge-FW : %ASA-6-302014: Teardown TCP connection 9816 for OUTSIDE:185.92.100.1/47726 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:16 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47728) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:16 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9817 for OUTSIDE:185.92.100.1/47728 (185.92.100.1/47728) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:16 Edge-FW : %ASA-6-302014: Teardown TCP connection 9817 for OUTSIDE:185.92.100.1/47728 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:17 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47730) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:17 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9818 for OUTSIDE:185.92.100.1/47730 (185.92.100.1/47730) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:17 Edge-FW : %ASA-6-302014: Teardown TCP connection 9818 for OUTSIDE:185.92.100.1/47730 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:18 Edge-FW : %ASA-6-302016: Teardown UDP connection 9808 for DMZ:10.0.1.10/54026 to INSIDE:10.2.1.10/53 duration 0:00:11 bytes 204 -1 -1
+Aug 17 2026 22:42:18 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47732) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:18 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9819 for OUTSIDE:185.92.100.1/47732 (185.92.100.1/47732) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:18 Edge-FW : %ASA-6-302014: Teardown TCP connection 9819 for OUTSIDE:185.92.100.1/47732 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:19 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47734) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:19 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9820 for OUTSIDE:185.92.100.1/47734 (185.92.100.1/47734) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:19 Edge-FW : %ASA-6-302014: Teardown TCP connection 9820 for OUTSIDE:185.92.100.1/47734 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:21 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47736) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:21 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9821 for OUTSIDE:185.92.100.1/47736 (185.92.100.1/47736) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:21 Edge-FW : %ASA-6-302014: Teardown TCP connection 9821 for OUTSIDE:185.92.100.1/47736 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:22 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47738) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:22 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9822 for OUTSIDE:185.92.100.1/47738 (185.92.100.1/47738) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:22 Edge-FW : %ASA-6-302014: Teardown TCP connection 9822 for OUTSIDE:185.92.100.1/47738 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:23 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47740) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:23 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9823 for OUTSIDE:185.92.100.1/47740 (185.92.100.1/47740) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:23 Edge-FW : %ASA-6-302014: Teardown TCP connection 9823 for OUTSIDE:185.92.100.1/47740 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:25 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47742) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:25 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9824 for OUTSIDE:185.92.100.1/47742 (185.92.100.1/47742) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:25 Edge-FW : %ASA-6-302014: Teardown TCP connection 9824 for OUTSIDE:185.92.100.1/47742 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:25 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(59954) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:42:25 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9825 for DMZ:10.0.1.10/59954 (10.0.1.10/59954) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:42:26 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47744) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:26 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9826 for OUTSIDE:185.92.100.1/47744 (185.92.100.1/47744) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:26 Edge-FW : %ASA-6-302014: Teardown TCP connection 9826 for OUTSIDE:185.92.100.1/47744 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:26 Edge-FW : %ASA-6-302016: Teardown UDP connection 9815 for DMZ:10.0.1.10/59774 to INSIDE:10.2.1.10/53 duration 0:00:12 bytes 312 -1 -1
+Aug 17 2026 22:42:27 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47746) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:27 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9827 for OUTSIDE:185.92.100.1/47746 (185.92.100.1/47746) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:27 Edge-FW : %ASA-6-302014: Teardown TCP connection 9827 for OUTSIDE:185.92.100.1/47746 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:28 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47748) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:28 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9828 for OUTSIDE:185.92.100.1/47748 (185.92.100.1/47748) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:28 Edge-FW : %ASA-6-302014: Teardown TCP connection 9828 for OUTSIDE:185.92.100.1/47748 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:30 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47750) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:30 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9829 for OUTSIDE:185.92.100.1/47750 (185.92.100.1/47750) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:30 Edge-FW : %ASA-6-302014: Teardown TCP connection 9829 for OUTSIDE:185.92.100.1/47750 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:31 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47752) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:31 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9830 for OUTSIDE:185.92.100.1/47752 (185.92.100.1/47752) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:31 Edge-FW : %ASA-6-302014: Teardown TCP connection 9830 for OUTSIDE:185.92.100.1/47752 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:32 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47754) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:32 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9831 for OUTSIDE:185.92.100.1/47754 (185.92.100.1/47754) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:32 Edge-FW : %ASA-6-302014: Teardown TCP connection 9831 for OUTSIDE:185.92.100.1/47754 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:33 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47756) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:33 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9832 for OUTSIDE:185.92.100.1/47756 (185.92.100.1/47756) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:33 Edge-FW : %ASA-6-302014: Teardown TCP connection 9832 for OUTSIDE:185.92.100.1/47756 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:35 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47758) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:35 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9833 for OUTSIDE:185.92.100.1/47758 (185.92.100.1/47758) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:35 Edge-FW : %ASA-6-302014: Teardown TCP connection 9833 for OUTSIDE:185.92.100.1/47758 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:36 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47760) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:36 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9834 for OUTSIDE:185.92.100.1/47760 (185.92.100.1/47760) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:36 Edge-FW : %ASA-6-302014: Teardown TCP connection 9834 for OUTSIDE:185.92.100.1/47760 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:37 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(55185) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:42:37 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9835 for DMZ:10.0.1.10/55185 (10.0.1.10/55185) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:42:37 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47762) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:37 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9836 for OUTSIDE:185.92.100.1/47762 (185.92.100.1/47762) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:37 Edge-FW : %ASA-6-302014: Teardown TCP connection 9836 for OUTSIDE:185.92.100.1/47762 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:38 Edge-FW : %ASA-6-302016: Teardown UDP connection 9825 for DMZ:10.0.1.10/59954 to INSIDE:10.2.1.10/53 duration 0:00:12 bytes 192 -1 -1
+Aug 17 2026 22:42:38 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47764) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:38 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9837 for OUTSIDE:185.92.100.1/47764 (185.92.100.1/47764) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:38 Edge-FW : %ASA-6-302014: Teardown TCP connection 9837 for OUTSIDE:185.92.100.1/47764 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:40 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47766) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:40 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9838 for OUTSIDE:185.92.100.1/47766 (185.92.100.1/47766) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:40 Edge-FW : %ASA-6-302014: Teardown TCP connection 9838 for OUTSIDE:185.92.100.1/47766 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:41 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47768) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:41 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9839 for OUTSIDE:185.92.100.1/47768 (185.92.100.1/47768) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:41 Edge-FW : %ASA-6-302014: Teardown TCP connection 9839 for OUTSIDE:185.92.100.1/47768 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:42 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47770) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:42 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9840 for OUTSIDE:185.92.100.1/47770 (185.92.100.1/47770) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:42 Edge-FW : %ASA-6-302014: Teardown TCP connection 9840 for OUTSIDE:185.92.100.1/47770 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:43 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47772) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:43 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9841 for OUTSIDE:185.92.100.1/47772 (185.92.100.1/47772) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:43 Edge-FW : %ASA-6-302014: Teardown TCP connection 9841 for OUTSIDE:185.92.100.1/47772 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:45 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47774) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:45 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9842 for OUTSIDE:185.92.100.1/47774 (185.92.100.1/47774) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:45 Edge-FW : %ASA-6-302014: Teardown TCP connection 9842 for OUTSIDE:185.92.100.1/47774 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:46 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47776) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:46 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9843 for OUTSIDE:185.92.100.1/47776 (185.92.100.1/47776) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:46 Edge-FW : %ASA-6-302014: Teardown TCP connection 9843 for OUTSIDE:185.92.100.1/47776 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:47 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47778) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:47 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9844 for OUTSIDE:185.92.100.1/47778 (185.92.100.1/47778) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:47 Edge-FW : %ASA-6-302014: Teardown TCP connection 9844 for OUTSIDE:185.92.100.1/47778 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:48 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47780) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:48 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9845 for OUTSIDE:185.92.100.1/47780 (185.92.100.1/47780) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:48 Edge-FW : %ASA-6-302014: Teardown TCP connection 9845 for OUTSIDE:185.92.100.1/47780 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:49 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(64011) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:42:49 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9846 for DMZ:10.0.1.10/64011 (10.0.1.10/64011) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:42:50 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47782) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:50 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9847 for OUTSIDE:185.92.100.1/47782 (185.92.100.1/47782) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:50 Edge-FW : %ASA-6-302014: Teardown TCP connection 9847 for OUTSIDE:185.92.100.1/47782 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:50 Edge-FW : %ASA-6-302016: Teardown UDP connection 9835 for DMZ:10.0.1.10/55185 to INSIDE:10.2.1.10/53 duration 0:00:13 bytes 312 -1 -1
+Aug 17 2026 22:42:51 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47784) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:51 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9848 for OUTSIDE:185.92.100.1/47784 (185.92.100.1/47784) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:51 Edge-FW : %ASA-6-302014: Teardown TCP connection 9848 for OUTSIDE:185.92.100.1/47784 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:52 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47786) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:52 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9849 for OUTSIDE:185.92.100.1/47786 (185.92.100.1/47786) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:52 Edge-FW : %ASA-6-302014: Teardown TCP connection 9849 for OUTSIDE:185.92.100.1/47786 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:53 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47788) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:53 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9850 for OUTSIDE:185.92.100.1/47788 (185.92.100.1/47788) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:53 Edge-FW : %ASA-6-302014: Teardown TCP connection 9850 for OUTSIDE:185.92.100.1/47788 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:42:54 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(43324) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:42:54 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9851 for OUTSIDE:185.92.100.1/43324 (185.92.100.1/43324) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:42:54 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(52546) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:42:54 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9852 for OUTSIDE:185.92.100.1/52546 (185.92.100.1/52546) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:00 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(59734) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:43:00 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9853 for DMZ:10.0.1.10/59734 (10.0.1.10/59734) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:43:00 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(59594) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:00 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9854 for OUTSIDE:185.92.100.1/59594 (185.92.100.1/59594) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:00 Edge-FW : %ASA-6-302014: Teardown TCP connection 9852 for OUTSIDE:185.92.100.1/52546 to DMZ:10.0.1.10/443 duration 0:00:06 bytes 88 TCP Reset-I from DMZ -1 -1
+Aug 17 2026 22:43:00 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(59600) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:00 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9855 for OUTSIDE:185.92.100.1/59600 (185.92.100.1/59600) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:01 Edge-FW : %ASA-6-302014: Teardown TCP connection 9851 for OUTSIDE:185.92.100.1/43324 to DMZ:10.0.1.10/80 duration 0:00:06 bytes 5581 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:43:01 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/43324 to 185.92.200.5/80 flags RST  on interface OUTSIDE
+Aug 17 2026 22:43:01 Edge-FW : %ASA-6-302016: Teardown UDP connection 9846 for DMZ:10.0.1.10/64011 to INSIDE:10.2.1.10/53 duration 0:00:11 bytes 192 -1 -1
+Aug 17 2026 22:43:07 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(59616) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:07 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9856 for OUTSIDE:185.92.100.1/59616 (185.92.100.1/59616) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:07 Edge-FW : %ASA-6-302014: Teardown TCP connection 9855 for OUTSIDE:185.92.100.1/59600 to DMZ:10.0.1.10/443 duration 0:00:06 bytes 11581 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:07 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(59620) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:07 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9857 for OUTSIDE:185.92.100.1/59620 (185.92.100.1/59620) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:07 Edge-FW : %ASA-6-302014: Teardown TCP connection 9856 for OUTSIDE:185.92.100.1/59616 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 3489 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:07 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(59624) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:07 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9858 for OUTSIDE:185.92.100.1/59624 (185.92.100.1/59624) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:07 Edge-FW : %ASA-6-302014: Teardown TCP connection 9857 for OUTSIDE:185.92.100.1/59620 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 6087 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:07 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(59626) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:07 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9859 for OUTSIDE:185.92.100.1/59626 (185.92.100.1/59626) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:07 Edge-FW : %ASA-6-302014: Teardown TCP connection 9858 for OUTSIDE:185.92.100.1/59624 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 3782 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(35970) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9860 for OUTSIDE:185.92.100.1/35970 (185.92.100.1/35970) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-302014: Teardown TCP connection 9859 for OUTSIDE:185.92.100.1/59626 to DMZ:10.0.1.10/443 duration 0:00:05 bytes 3758 TCP FINs from OUTSIDE -1 -1
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(35976) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9861 for OUTSIDE:185.92.100.1/35976 (185.92.100.1/35976) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-302014: Teardown TCP connection 9860 for OUTSIDE:185.92.100.1/35970 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 3776 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(35986) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9862 for OUTSIDE:185.92.100.1/35986 (185.92.100.1/35986) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-302014: Teardown TCP connection 9861 for OUTSIDE:185.92.100.1/35976 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 3813 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(35994) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9863 for OUTSIDE:185.92.100.1/35994 (185.92.100.1/35994) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-302014: Teardown TCP connection 9862 for OUTSIDE:185.92.100.1/35986 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 3801 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(36000) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9864 for OUTSIDE:185.92.100.1/36000 (185.92.100.1/36000) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-302014: Teardown TCP connection 9863 for OUTSIDE:185.92.100.1/35994 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 3783 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(36004) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9865 for OUTSIDE:185.92.100.1/36004 (185.92.100.1/36004) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-302014: Teardown TCP connection 9864 for OUTSIDE:185.92.100.1/36000 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 4077 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(36016) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9866 for OUTSIDE:185.92.100.1/36016 (185.92.100.1/36016) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-302014: Teardown TCP connection 9865 for OUTSIDE:185.92.100.1/36004 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 3857 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(54666) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9867 for DMZ:10.0.1.10/54666 (10.0.1.10/54666) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(36032) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9868 for OUTSIDE:185.92.100.1/36032 (185.92.100.1/36032) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:12 Edge-FW : %ASA-6-302014: Teardown TCP connection 9866 for OUTSIDE:185.92.100.1/36016 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 3811 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:13 Edge-FW : %ASA-6-302016: Teardown UDP connection 9853 for DMZ:10.0.1.10/59734 to INSIDE:10.2.1.10/53 duration 0:00:12 bytes 312 -1 -1
+Aug 17 2026 22:43:13 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(36042) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:13 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9869 for OUTSIDE:185.92.100.1/36042 (185.92.100.1/36042) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:13 Edge-FW : %ASA-6-302014: Teardown TCP connection 9868 for OUTSIDE:185.92.100.1/36032 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 3879 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:13 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(36056) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:13 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9870 for OUTSIDE:185.92.100.1/36056 (185.92.100.1/36056) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:13 Edge-FW : %ASA-6-302014: Teardown TCP connection 9869 for OUTSIDE:185.92.100.1/36042 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 5229 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:14 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(36072) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:14 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9871 for OUTSIDE:185.92.100.1/36072 (185.92.100.1/36072) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:14 Edge-FW : %ASA-6-302014: Teardown TCP connection 9870 for OUTSIDE:185.92.100.1/36056 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 4040 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:14 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(36074) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:14 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9872 for OUTSIDE:185.92.100.1/36074 (185.92.100.1/36074) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:14 Edge-FW : %ASA-6-302014: Teardown TCP connection 9871 for OUTSIDE:185.92.100.1/36072 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 3781 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:14 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(36086) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:14 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9873 for OUTSIDE:185.92.100.1/36086 (185.92.100.1/36086) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:14 Edge-FW : %ASA-6-302014: Teardown TCP connection 9872 for OUTSIDE:185.92.100.1/36074 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 3778 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:15 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(36102) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:15 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9874 for OUTSIDE:185.92.100.1/36102 (185.92.100.1/36102) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:15 Edge-FW : %ASA-6-302014: Teardown TCP connection 9873 for OUTSIDE:185.92.100.1/36086 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 3820 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:15 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(36118) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:15 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9875 for OUTSIDE:185.92.100.1/36118 (185.92.100.1/36118) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:16 Edge-FW : %ASA-6-302014: Teardown TCP connection 9874 for OUTSIDE:185.92.100.1/36102 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 5126 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:16 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(36128) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:16 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9876 for OUTSIDE:185.92.100.1/36128 (185.92.100.1/36128) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:16 Edge-FW : %ASA-6-302014: Teardown TCP connection 9875 for OUTSIDE:185.92.100.1/36118 to DMZ:10.0.1.10/443 duration 0:00:01 bytes 3977 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:16 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(36130) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:16 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9877 for OUTSIDE:185.92.100.1/36130 (185.92.100.1/36130) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:16 Edge-FW : %ASA-6-302014: Teardown TCP connection 9876 for OUTSIDE:185.92.100.1/36128 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 3785 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:17 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(36138) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:17 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9878 for OUTSIDE:185.92.100.1/36138 (185.92.100.1/36138) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:17 Edge-FW : %ASA-6-302014: Teardown TCP connection 9877 for OUTSIDE:185.92.100.1/36130 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 5123 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:17 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(36142) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:17 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9879 for OUTSIDE:185.92.100.1/36142 (185.92.100.1/36142) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:17 Edge-FW : %ASA-6-302014: Teardown TCP connection 9878 for OUTSIDE:185.92.100.1/36138 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 4094 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:17 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(36150) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:17 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9880 for OUTSIDE:185.92.100.1/36150 (185.92.100.1/36150) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:17 Edge-FW : %ASA-6-302014: Teardown TCP connection 9879 for OUTSIDE:185.92.100.1/36142 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 4131 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:18 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(36164) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:18 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9881 for OUTSIDE:185.92.100.1/36164 (185.92.100.1/36164) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:18 Edge-FW : %ASA-6-302014: Teardown TCP connection 9880 for OUTSIDE:185.92.100.1/36150 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 3776 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:18 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(36174) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:18 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9882 for OUTSIDE:185.92.100.1/36174 (185.92.100.1/36174) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:18 Edge-FW : %ASA-6-302014: Teardown TCP connection 9881 for OUTSIDE:185.92.100.1/36164 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 3944 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:19 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(36178) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:19 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9883 for OUTSIDE:185.92.100.1/36178 (185.92.100.1/36178) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:19 Edge-FW : %ASA-6-302014: Teardown TCP connection 9882 for OUTSIDE:185.92.100.1/36174 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 3859 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:19 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(36190) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:19 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9884 for OUTSIDE:185.92.100.1/36190 (185.92.100.1/36190) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:19 Edge-FW : %ASA-6-302014: Teardown TCP connection 9883 for OUTSIDE:185.92.100.1/36178 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 3821 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:19 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(45374) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:19 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9885 for OUTSIDE:185.92.100.1/45374 (185.92.100.1/45374) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(41082) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9886 for OUTSIDE:185.92.100.1/41082 (185.92.100.1/41082) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-302014: Teardown TCP connection 9885 for OUTSIDE:185.92.100.1/45374 to DMZ:10.0.1.10/443 duration 0:00:01 bytes 3817 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(41083) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9887 for OUTSIDE:185.92.100.1/41083 (185.92.100.1/41083) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-302014: Teardown TCP connection 9886 for OUTSIDE:185.92.100.1/41082 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(41084) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9888 for OUTSIDE:185.92.100.1/41084 (185.92.100.1/41084) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-302014: Teardown TCP connection 9887 for OUTSIDE:185.92.100.1/41083 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(41085) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9889 for OUTSIDE:185.92.100.1/41085 (185.92.100.1/41085) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-302014: Teardown TCP connection 9888 for OUTSIDE:185.92.100.1/41084 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-302014: Teardown TCP connection 9889 for OUTSIDE:185.92.100.1/41085 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(41086) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9890 for OUTSIDE:185.92.100.1/41086 (185.92.100.1/41086) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(41087) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9891 for OUTSIDE:185.92.100.1/41087 (185.92.100.1/41087) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-302014: Teardown TCP connection 9890 for OUTSIDE:185.92.100.1/41086 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(41094) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9892 for OUTSIDE:185.92.100.1/41094 (185.92.100.1/41094) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-302014: Teardown TCP connection 9891 for OUTSIDE:185.92.100.1/41087 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(41096) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/41096 to 185.92.200.5/80 flags INVALID on interface OUTSIDE
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(41097) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/41097 to 185.92.200.5/80 flags FIN SYN PSH URG  on interface OUTSIDE
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(41098) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/41098 to 185.92.200.5/80 flags ACK  on interface OUTSIDE
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-302014: Teardown TCP connection 9892 for OUTSIDE:185.92.100.1/41094 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/41096 to 185.92.200.5/80 flags INVALID on interface OUTSIDE
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/41097 to 185.92.200.5/80 flags FIN SYN PSH URG  on interface OUTSIDE
+Aug 17 2026 22:43:21 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/41098 to 185.92.200.5/80 flags ACK  on interface OUTSIDE
+Aug 17 2026 22:43:22 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/41096 to 185.92.200.5/80 flags INVALID on interface OUTSIDE
+Aug 17 2026 22:43:22 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/41097 to 185.92.200.5/80 flags FIN SYN PSH URG  on interface OUTSIDE
+Aug 17 2026 22:43:22 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/41098 to 185.92.200.5/80 flags ACK  on interface OUTSIDE
+Aug 17 2026 22:43:22 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/41096 to 185.92.200.5/80 flags INVALID on interface OUTSIDE
+Aug 17 2026 22:43:22 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/41097 to 185.92.200.5/80 flags FIN SYN PSH URG  on interface OUTSIDE
+Aug 17 2026 22:43:22 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/41098 to 185.92.200.5/80 flags ACK  on interface OUTSIDE
+Aug 17 2026 22:43:23 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(41338) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:23 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9893 for OUTSIDE:185.92.100.1/41338 (185.92.100.1/41338) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:43:23 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(41339) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:23 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9894 for OUTSIDE:185.92.100.1/41339 (185.92.100.1/41339) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:43:23 Edge-FW : %ASA-6-302014: Teardown TCP connection 9893 for OUTSIDE:185.92.100.1/41338 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:43:23 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(41340) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:23 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9895 for OUTSIDE:185.92.100.1/41340 (185.92.100.1/41340) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:43:23 Edge-FW : %ASA-6-302014: Teardown TCP connection 9894 for OUTSIDE:185.92.100.1/41339 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:43:23 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(41341) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:23 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9896 for OUTSIDE:185.92.100.1/41341 (185.92.100.1/41341) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:43:23 Edge-FW : %ASA-6-302014: Teardown TCP connection 9895 for OUTSIDE:185.92.100.1/41340 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(41342) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9897 for OUTSIDE:185.92.100.1/41342 (185.92.100.1/41342) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-302014: Teardown TCP connection 9896 for OUTSIDE:185.92.100.1/41341 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(41343) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9898 for OUTSIDE:185.92.100.1/41343 (185.92.100.1/41343) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-302014: Teardown TCP connection 9897 for OUTSIDE:185.92.100.1/41342 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(41350) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-302014: Teardown TCP connection 9898 for OUTSIDE:185.92.100.1/41343 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9899 for OUTSIDE:185.92.100.1/41350 (185.92.100.1/41350) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(41352) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/41352 to 185.92.200.5/80 flags INVALID on interface OUTSIDE
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(41353) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/41353 to 185.92.200.5/80 flags FIN SYN PSH URG  on interface OUTSIDE
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-302014: Teardown TCP connection 9899 for OUTSIDE:185.92.100.1/41350 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(41354) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/41354 to 185.92.200.5/80 flags ACK  on interface OUTSIDE
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/41352 to 185.92.200.5/80 flags INVALID on interface OUTSIDE
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/41353 to 185.92.200.5/80 flags FIN SYN PSH URG  on interface OUTSIDE
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/41354 to 185.92.200.5/80 flags ACK  on interface OUTSIDE
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/41352 to 185.92.200.5/80 flags INVALID on interface OUTSIDE
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/41353 to 185.92.200.5/80 flags FIN SYN PSH URG  on interface OUTSIDE
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(60553) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9900 for DMZ:10.0.1.10/60553 (10.0.1.10/60553) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/41354 to 185.92.200.5/80 flags ACK  on interface OUTSIDE
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/41352 to 185.92.200.5/80 flags INVALID on interface OUTSIDE
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/41353 to 185.92.200.5/80 flags FIN SYN PSH URG  on interface OUTSIDE
+Aug 17 2026 22:43:24 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 185.92.100.1/41354 to 185.92.200.5/80 flags ACK  on interface OUTSIDE
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(45382) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9901 for OUTSIDE:185.92.100.1/45382 (185.92.100.1/45382) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(53946) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9902 for OUTSIDE:185.92.100.1/53946 (185.92.100.1/53946) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(53952) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9903 for OUTSIDE:185.92.100.1/53952 (185.92.100.1/53952) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(45386) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9904 for OUTSIDE:185.92.100.1/45386 (185.92.100.1/45386) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(45396) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9905 for OUTSIDE:185.92.100.1/45396 (185.92.100.1/45396) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(53954) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9906 for OUTSIDE:185.92.100.1/53954 (185.92.100.1/53954) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(45398) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-302014: Teardown TCP connection 9905 for OUTSIDE:185.92.100.1/45396 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 18 TCP Reset-I from DMZ -1 -1
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9907 for OUTSIDE:185.92.100.1/45398 (185.92.100.1/45398) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(45408) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9908 for OUTSIDE:185.92.100.1/45408 (185.92.100.1/45408) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-302014: Teardown TCP connection 9901 for OUTSIDE:185.92.100.1/45382 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 4840 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-302014: Teardown TCP connection 9904 for OUTSIDE:185.92.100.1/45386 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 5282 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(53958) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9909 for OUTSIDE:185.92.100.1/53958 (185.92.100.1/53958) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-302014: Teardown TCP connection 9903 for OUTSIDE:185.92.100.1/53952 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 8317 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(53960) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9910 for OUTSIDE:185.92.100.1/53960 (185.92.100.1/53960) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-302014: Teardown TCP connection 9906 for OUTSIDE:185.92.100.1/53954 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 2018 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-302014: Teardown TCP connection 9902 for OUTSIDE:185.92.100.1/53946 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 1576 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-302014: Teardown TCP connection 9907 for OUTSIDE:185.92.100.1/45398 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 174 TCP Reset-I from DMZ -1 -1
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(45424) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9911 for OUTSIDE:185.92.100.1/45424 (185.92.100.1/45424) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(45426) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9912 for OUTSIDE:185.92.100.1/45426 (185.92.100.1/45426) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-302016: Teardown UDP connection 9867 for DMZ:10.0.1.10/54666 to INSIDE:10.2.1.10/53 duration 0:00:13 bytes 192 -1 -1
+Aug 17 2026 22:43:25 Edge-FW : %ASA-6-302014: Teardown TCP connection 9909 for OUTSIDE:185.92.100.1/53958 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 1562 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:26 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(45436) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:26 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9913 for OUTSIDE:185.92.100.1/45436 (185.92.100.1/45436) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:26 Edge-FW : %ASA-6-302014: Teardown TCP connection 9912 for OUTSIDE:185.92.100.1/45426 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 4840 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:26 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(45450) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:26 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9914 for OUTSIDE:185.92.100.1/45450 (185.92.100.1/45450) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:26 Edge-FW : %ASA-6-302014: Teardown TCP connection 9913 for OUTSIDE:185.92.100.1/45436 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 174 TCP Reset-I from DMZ -1 -1
+Aug 17 2026 22:43:26 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(53970) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:26 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9915 for OUTSIDE:185.92.100.1/53970 (185.92.100.1/53970) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:43:26 Edge-FW : %ASA-6-302014: Teardown TCP connection 9910 for OUTSIDE:185.92.100.1/53960 to DMZ:10.0.1.10/80 duration 0:00:01 bytes 0 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:43:26 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(45462) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:26 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9916 for OUTSIDE:185.92.100.1/45462 (185.92.100.1/45462) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:26 Edge-FW : %ASA-6-302014: Teardown TCP connection 9916 for OUTSIDE:185.92.100.1/45462 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 155 TCP Reset-I from DMZ -1 -1
+Aug 17 2026 22:43:26 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(45476) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:26 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9917 for OUTSIDE:185.92.100.1/45476 (185.92.100.1/45476) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:26 Edge-FW : %ASA-6-302014: Teardown TCP connection 9917 for OUTSIDE:185.92.100.1/45476 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 160 TCP Reset-I from DMZ -1 -1
+Aug 17 2026 22:43:26 Edge-FW : %ASA-6-302014: Teardown TCP connection 9914 for OUTSIDE:185.92.100.1/45450 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 4826 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:26 Edge-FW : %ASA-6-302014: Teardown TCP connection 9911 for OUTSIDE:185.92.100.1/45424 to DMZ:10.0.1.10/443 duration 0:00:01 bytes 3013 TCP FINs from OUTSIDE -1 -1
+Aug 17 2026 22:43:27 Edge-FW : %ASA-6-106100: access-list LANUSERS_IN permitted udp LANUSERS/10.1.1.51(59138) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0xf12a91a2, 0x00000000]
+Aug 17 2026 22:43:27 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9918 for LANUSERS:10.1.1.51/59138 (10.1.1.51/59138) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:43:27 Edge-FW : %ASA-6-302014: Teardown TCP connection 9915 for OUTSIDE:185.92.100.1/53970 to DMZ:10.0.1.10/80 duration 0:00:01 bytes 3185 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:43:27 Edge-FW : %ASA-6-106015: Deny TCP (no connection) from 10.0.1.10/80 to 185.92.100.1/53970 flags FIN PSH ACK  on interface DMZ
+Aug 17 2026 22:43:28 Edge-FW : %ASA-6-302016: Teardown UDP connection 9918 for LANUSERS:10.1.1.51/59138 to INSIDE:10.2.1.10/53 duration 0:00:00 bytes 139 -1 -1
+Aug 17 2026 22:43:32 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47092) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:32 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9919 for OUTSIDE:185.92.100.1/47092 (185.92.100.1/47092) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:43:32 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(818) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:32 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9920 for OUTSIDE:185.92.100.1/818 (185.92.100.1/818) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:32 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(58454) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:32 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9921 for OUTSIDE:185.92.100.1/58454 (185.92.100.1/58454) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:32 Edge-FW : %ASA-6-302014: Teardown TCP connection 9920 for OUTSIDE:185.92.100.1/818 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 44 TCP Reset-I from DMZ -1 -1
+Aug 17 2026 22:43:32 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(47108) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 17 2026 22:43:32 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9922 for OUTSIDE:185.92.100.1/47108 (185.92.100.1/47108) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 17 2026 22:43:32 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(58460) -> DMZ/10.0.1.10(443) hit-cnt 1 first hit [0x247623c7, 0x00000000]
+Aug 17 2026 22:43:32 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9923 for OUTSIDE:185.92.100.1/58460 (185.92.100.1/58460) to DMZ:10.0.1.10/443 (185.92.200.5/443) -1 -1
+Aug 17 2026 22:43:32 Edge-FW : %ASA-6-302014: Teardown TCP connection 9921 for OUTSIDE:185.92.100.1/58454 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 11581 TCP FINs from DMZ -1 -1
+Aug 17 2026 22:43:32 Edge-FW : %ASA-6-302014: Teardown TCP connection 9919 for OUTSIDE:185.92.100.1/47092 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 8317 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:43:32 Edge-FW : %ASA-6-302014: Teardown TCP connection 9923 for OUTSIDE:185.92.100.1/58460 to DMZ:10.0.1.10/443 duration 0:00:00 bytes 18 TCP Reset-I from DMZ -1 -1
+Aug 17 2026 22:43:32 Edge-FW : %ASA-6-302014: Teardown TCP connection 9922 for OUTSIDE:185.92.100.1/47108 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 2774 TCP Reset-O from OUTSIDE -1 -1
+Aug 17 2026 22:43:36 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(50697) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:43:36 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9924 for DMZ:10.0.1.10/50697 (10.0.1.10/50697) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:43:36 Edge-FW : %ASA-6-302016: Teardown UDP connection 9900 for DMZ:10.0.1.10/60553 to INSIDE:10.2.1.10/53 duration 0:00:11 bytes 312 -1 -1
+Aug 17 2026 22:43:47 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(58769) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:43:47 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9925 for DMZ:10.0.1.10/58769 (10.0.1.10/58769) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:43:48 Edge-FW : %ASA-6-302016: Teardown UDP connection 9924 for DMZ:10.0.1.10/50697 to INSIDE:10.2.1.10/53 duration 0:00:12 bytes 192 -1 -1
+Aug 17 2026 22:43:59 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(56151) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:43:59 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9926 for DMZ:10.0.1.10/56151 (10.0.1.10/56151) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:43:59 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(50265) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:43:59 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9927 for DMZ:10.0.1.10/50265 (10.0.1.10/50265) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:43:59 Edge-FW : %ASA-6-302016: Teardown UDP connection 9925 for DMZ:10.0.1.10/58769 to INSIDE:10.2.1.10/53 duration 0:00:12 bytes 312 -1 -1
+Aug 17 2026 22:44:11 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(53125) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:44:11 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9928 for DMZ:10.0.1.10/53125 (10.0.1.10/53125) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:44:11 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(62334) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:44:11 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9929 for DMZ:10.0.1.10/62334 (10.0.1.10/62334) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:44:12 Edge-FW : %ASA-6-302016: Teardown UDP connection 9926 for DMZ:10.0.1.10/56151 to INSIDE:10.2.1.10/53 duration 0:00:13 bytes 192 -1 -1
+Aug 17 2026 22:44:12 Edge-FW : %ASA-6-302016: Teardown UDP connection 9929 for DMZ:10.0.1.10/62334 to INSIDE:10.2.1.10/53 duration 0:00:01 bytes 68 -1 -1
+Aug 17 2026 22:44:12 Edge-FW : %ASA-6-302016: Teardown UDP connection 9927 for DMZ:10.0.1.10/50265 to INSIDE:10.2.1.10/53 duration 0:00:13 bytes 204 -1 -1
+Aug 17 2026 22:44:22 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(65521) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:44:22 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9930 for DMZ:10.0.1.10/65521 (10.0.1.10/65521) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:44:23 Edge-FW : %ASA-6-302016: Teardown UDP connection 9928 for DMZ:10.0.1.10/53125 to INSIDE:10.2.1.10/53 duration 0:00:11 bytes 312 -1 -1
+Aug 17 2026 22:44:34 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(53823) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:44:34 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9931 for DMZ:10.0.1.10/53823 (10.0.1.10/53823) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:44:35 Edge-FW : %ASA-6-302016: Teardown UDP connection 9930 for DMZ:10.0.1.10/65521 to INSIDE:10.2.1.10/53 duration 0:00:12 bytes 312 -1 -1
+Aug 17 2026 22:44:46 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(58364) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:44:46 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9932 for DMZ:10.0.1.10/58364 (10.0.1.10/58364) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:44:47 Edge-FW : %ASA-6-302016: Teardown UDP connection 9932 for DMZ:10.0.1.10/58364 to INSIDE:10.2.1.10/53 duration 0:00:01 bytes 104 -1 -1
+Aug 17 2026 22:44:47 Edge-FW : %ASA-6-302016: Teardown UDP connection 9931 for DMZ:10.0.1.10/53823 to INSIDE:10.2.1.10/53 duration 0:00:13 bytes 312 -1 -1
+Aug 17 2026 22:45:05 Edge-FW : %ASA-6-302014: Teardown TCP connection 9854 for OUTSIDE:185.92.100.1/59594 to DMZ:10.0.1.10/443 duration 0:02:04 bytes 1063 TCP FINs from OUTSIDE -1 -1
+Aug 17 2026 22:45:39 Edge-FW : %ASA-6-302010: 2 in use, 13 most used
+Aug 17 2026 22:46:37 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(53388) -> INSIDE/10.2.1.10(53) hit-cnt 1 300-second interval [0x942ce7e8, 0x00000000]
+Aug 17 2026 22:46:39 Edge-FW : %ASA-6-106100: access-list LANUSERS_IN permitted udp LANUSERS/10.1.1.51(63991) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0xf12a91a2, 0x00000000]
+Aug 17 2026 22:46:39 Edge-FW : %ASA-6-302015: Built inbound UDP connection 9933 for LANUSERS:10.1.1.51/63991 (10.1.1.51/63991) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 17 2026 22:46:51 Edge-FW : %ASA-6-302016: Teardown UDP connection 9933 for LANUSERS:10.1.1.51/63991 to INSIDE:10.2.1.10/53 duration 0:00:11 bytes 170 -1 -1
+Edge-FW# 

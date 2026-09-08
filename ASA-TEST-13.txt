@@ -1,0 +1,39 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2026.08.20 15:11:55 =~=~=~=~=~=~=~=~=~=~=~=
+
+Edge-FW# clear log buffer 
+Edge-FW# sh log    
+Syslog logging: enabled
+    Facility: 20
+    Timestamp logging: enabled
+    Timezone: enabled
+    Logging Format: disabled
+    Hide Username logging: enabled
+    Standby logging: disabled
+    Debug-trace logging: disabled
+    Console logging: level warnings, 62 messages logged
+    Monitor logging: disabled
+    Buffer logging: level informational, 527 messages logged
+    Trap logging: level informational, facility 20, 527 messages logged
+    Global TCP syslog stats::
+        NOT_PUTABLE: 0, ALL_CHANNEL_DOWN: 0
+        CHANNEL_FLAP_CNT: 0, SYSLOG_PKT_LOSS: 0
+        PARTIAL_REWRITE_CNT: 0
+    Permit-hostdown logging: disabled
+    History logging: disabled
+    Device ID: hostname "Edge-FW"
+    Mail logging: disabled
+    ASDM logging: disabled
+Aug 20 2026 15:13:07 Edge-FW : %ASA-5-111008: User 'enable_15' executed the 'clear logging buffer' command.
+Aug 20 2026 15:13:07 Edge-FW : %ASA-5-111010: User 'enable_15', running 'CLI' from IP 0.0.0.0, executed 'clear logging buffer'
+Aug 20 2026 15:13:41 Edge-FW : %ASA-6-106100: access-list LANUSERS_IN permitted tcp LANUSERS/10.1.1.51(60116) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x0b3053f9, 0x00000000]
+Aug 20 2026 15:13:41 Edge-FW : %ASA-6-302013: Built outbound TCP connection 17 for DMZ:10.0.1.10/80 (10.0.1.10/80) to LANUSERS:10.1.1.51/60116 (10.1.1.51/60116) -1 -1
+Aug 20 2026 15:13:41 Edge-FW : %ASA-6-302014: Teardown TCP connection 17 for DMZ:10.0.1.10/80 to LANUSERS:10.1.1.51/60116 duration 0:00:00 bytes 0 TCP Reset-O from DMZ -1 -1
+Aug 20 2026 15:13:41 Edge-FW : %ASA-6-106100: access-list LANUSERS_IN permitted udp LANUSERS/10.1.1.51(49368) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0xf12a91a2, 0x00000000]
+Aug 20 2026 15:13:41 Edge-FW : %ASA-6-302015: Built inbound UDP connection 18 for LANUSERS:10.1.1.51/49368 (10.1.1.51/49368) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 20 2026 15:13:53 Edge-FW : %ASA-6-302016: Teardown UDP connection 18 for LANUSERS:10.1.1.51/49368 to INSIDE:10.2.1.10/53 duration 0:00:11 bytes 200 -1 -1
+Aug 20 2026 15:13:54 Edge-FW : %ASA-6-106100: access-list LANUSERS_IN permitted udp LANUSERS/10.1.1.51(59469) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0xf12a91a2, 0x00000000]
+Aug 20 2026 15:13:54 Edge-FW : %ASA-6-302015: Built inbound UDP connection 19 for LANUSERS:10.1.1.51/59469 (10.1.1.51/59469) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 20 2026 15:14:06 Edge-FW : %ASA-6-302016: Teardown UDP connection 19 for LANUSERS:10.1.1.51/59469 to INSIDE:10.2.1.10/53 duration 0:00:12 bytes 200 -1 -1
+Aug 20 2026 15:14:29 Edge-FW : %ASA-5-111008: User 'enable_15' executed the 'terminal pager 0' command.
+Aug 20 2026 15:14:29 Edge-FW : %ASA-5-111010: User 'enable_15', running 'CLI' from IP 0.0.0.0, executed 'terminal pager 0'
+Edge-FW# 

@@ -1,0 +1,35 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2026.08.21 23:16:43 =~=~=~=~=~=~=~=~=~=~=~=
+
+Edge-FW# 
+Edge-FW# 
+Edge-FW# sh logclear logging buffer 
+Edge-FW# clear logging buffer sh log               
+Syslog logging: enabled
+    Facility: 20
+    Timestamp logging: enabled
+    Timezone: enabled
+    Logging Format: disabled
+    Hide Username logging: enabled
+    Standby logging: disabled
+    Debug-trace logging: disabled
+    Console logging: level warnings, 6 messages logged
+    Monitor logging: disabled
+    Buffer logging: level informational, 515 messages logged
+    Trap logging: level informational, facility 20, 515 messages logged
+    Global TCP syslog stats::
+        NOT_PUTABLE: 0, ALL_CHANNEL_DOWN: 0
+        CHANNEL_FLAP_CNT: 0, SYSLOG_PKT_LOSS: 0
+        PARTIAL_REWRITE_CNT: 0
+    Permit-hostdown logging: disabled
+    History logging: disabled
+    Device ID: hostname "Edge-FW"
+    Mail logging: disabled
+    ASDM logging: disabled
+Aug 21 2026 23:16:45 Edge-FW : %ASA-5-111008: User 'enable_15' executed the 'clear logging buffer' command.
+Aug 21 2026 23:16:45 Edge-FW : %ASA-5-111010: User 'enable_15', running 'CLI' from IP 0.0.0.0, executed 'clear logging buffer'
+Aug 21 2026 23:16:45 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(50074) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 21 2026 23:16:45 Edge-FW : %ASA-6-302015: Built inbound UDP connection 33 for DMZ:10.0.1.10/50074 (10.0.1.10/50074) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 21 2026 23:16:47 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(42340) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 21 2026 23:16:47 Edge-FW : %ASA-6-302013: Built inbound TCP connection 34 for OUTSIDE:185.92.100.1/42340 (185.92.100.1/42340) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 21 2026 23:16:47 Edge-FW : %ASA-6-302014: Teardown TCP connection 34 for OUTSIDE:185.92.100.1/42340 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 8407 TCP FINs from OUTSIDE -1 -1
+Edge-FW# 

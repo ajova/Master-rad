@@ -1,0 +1,33 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2026.08.21 23:15:18 =~=~=~=~=~=~=~=~=~=~=~=
+
+Edge-FW# 
+Edge-FW# 
+Edge-FW# sh logclear logging buffer 
+Edge-FW# sh log
+Syslog logging: enabled
+    Facility: 20
+    Timestamp logging: enabled
+    Timezone: enabled
+    Logging Format: disabled
+    Hide Username logging: enabled
+    Standby logging: disabled
+    Debug-trace logging: disabled
+    Console logging: level warnings, 6 messages logged
+    Monitor logging: disabled
+    Buffer logging: level informational, 500 messages logged
+    Trap logging: level informational, facility 20, 500 messages logged
+    Global TCP syslog stats::
+        NOT_PUTABLE: 0, ALL_CHANNEL_DOWN: 0
+        CHANNEL_FLAP_CNT: 0, SYSLOG_PKT_LOSS: 0
+        PARTIAL_REWRITE_CNT: 0
+    Permit-hostdown logging: disabled
+    History logging: disabled
+    Device ID: hostname "Edge-FW"
+    Mail logging: disabled
+    ASDM logging: disabled
+Aug 21 2026 23:15:20 Edge-FW : %ASA-5-111008: User 'enable_15' executed the 'clear logging buffer' command.
+Aug 21 2026 23:15:20 Edge-FW : %ASA-5-111010: User 'enable_15', running 'CLI' from IP 0.0.0.0, executed 'clear logging buffer'
+Aug 21 2026 23:15:22 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(44256) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 21 2026 23:15:22 Edge-FW : %ASA-6-302013: Built inbound TCP connection 30 for OUTSIDE:185.92.100.1/44256 (185.92.100.1/44256) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 21 2026 23:15:23 Edge-FW : %ASA-6-302014: Teardown TCP connection 30 for OUTSIDE:185.92.100.1/44256 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 8380 TCP FINs from OUTSIDE -1 -1
+Edge-FW# 

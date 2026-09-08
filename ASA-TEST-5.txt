@@ -1,6 +1,5 @@
 =~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2026.08.21 23:08:44 =~=~=~=~=~=~=~=~=~=~=~=
 
-
 Edge-FW# clear logging buffer sh log               
 Syslog logging: enabled
     Facility: 20

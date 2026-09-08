@@ -1,0 +1,114 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2026.08.17 23:14:27 =~=~=~=~=~=~=~=~=~=~=~=
+Aug 17 2026 23:14:15 Edge-FW : %ASA-4-733100: [ Scanning] drop rate-1 exceeded. Current burst rate is 0 per second, max configured rate is 10; Current average rate is 6 per second, max configured rate is 5; Cumulative total count is 3989
+Aug 17 2026 23:14:35 Edge-FW : %ASA-4-733100: [ Scanning] drop rate-1 exceeded. Current burst rate is 0 per second, max configured rate is 10; Current average rate is 6 per second, max configured rate is 5; Cumulative total count is 3989
+Aug 17 2026 23:14:55 Edge-FW : %ASA-4-733100: [ Scanning] drop rate-1 exceeded. Current burst rate is 0 per second, max configured rate is 10; Current average rate is 6 per second, max configured rate is 5; Cumulative total count is 3989
+Aug 17 2026 23:15:15 Edge-FW : %ASA-4-733100: [ Scanning] drop rate-1 exceeded. Current burst rate is 0 per second, max configured rate is 10; Current average rate is 6 per second, max configured rate is 5; Cumulative total count is 3989
+Aug 17 2026 23:15:35 Edge-FW : %ASA-4-733100: [ Scanning] drop rate-1 exceeded. Current burst rate is 0 per second, max configured rate is 10; Current average rate is 6 per second, max configured rate is 5; Cumulative total count is 3990
+
+Edge-FW# 
+Edge-FW# 
+Edge-FW# 
+Edge-FW# 
+Edge-FW# 
+Edge-FW# clear log
+Edge-FW# clear logging bu
+Edge-FW# clear logging buffer 
+Edge-FW# 
+Edge-FW# 
+Edge-FW# Aug 17 2026 23:15:55 Edge-FW : %ASA-4-733100: [ Scanning] drop rate-1 exceeded. Current burst rate is 0 per second, max configured rate is 10; Current average rate is 6 per second, max configured rate is 5; Cumulative total count is 3989
+Aug 17 2026 23:16:15 Edge-FW : %ASA-4-733100: [ Scanning] drop rate-1 exceeded. Current burst rate is 0 per second, max configured rate is 10; Current average rate is 6 per second, max configured rate is 5; Cumulative total count is 3989
+
+Edge-FW# 
+Edge-FW# 
+Edge-FW# sh log
+Syslog logging: enabled
+    Facility: 20
+    Timestamp logging: enabled
+    Timezone: enabled
+    Logging Format: disabled
+    Hide Username logging: enabled
+    Standby logging: disabled
+    Debug-trace logging: disabled
+    Console logging: level warnings, 481 messages logged
+    Monitor logging: disabled
+    Buffer logging: level informational, 23975 messages logged
+    Trap logging: level informational, facility 20, 23975 messages logged
+    Global TCP syslog stats::
+        NOT_PUTABLE: 0, ALL_CHANNEL_DOWN: 0
+        CHANNEL_FLAP_CNT: 0, SYSLOG_PKT_LOSS: 0
+        PARTIAL_REWRITE_CNT: 0
+    Permit-hostdown logging: disabled
+    History logging: disabled
+    Device ID: hostname "Edge-FW"
+    Mail logging: disabled
+    ASDM logging: disabled
+Aug 17 2026 23:15:45 Edge-FW : %ASA-5-111008: User 'enable_15' executed the 'clear logging buffer' command.
+Aug 17 2026 23:15:45 Edge-FW : %ASA-5-111010: User 'enable_15', running 'CLI' from IP 0.0.0.0, executed 'clear logging buffer'
+Aug 17 2026 23:15:55 Edge-FW : %ASA-4-733100: [ Scanning] drop rate-1 exceeded. Current burst rate is 0 per second, max configured rate is 10; Current average rate is 6 per second, max configured rate is 5; Cumulative total count is 3989
+Aug 17 2026 23:16:15 Edge-FW : %ASA-4-733100: [ Scanning] drop rate-1 exceeded. Current burst rate is 0 per second, max configured rate is 10; Current average rate is 6 per second, max configured rate is 5; Cumulative total count is 3989
+Edge-FW# 
+Edge-FW# 
+Edge-FW# 
+Edge-FW# 
+Edge-FW# sh logclear logging buffer 
+Edge-FW# clear logging buffer sh log               
+Syslog logging: enabled
+    Facility: 20
+    Timestamp logging: enabled
+    Timezone: enabled
+    Logging Format: disabled
+    Hide Username logging: enabled
+    Standby logging: disabled
+    Debug-trace logging: disabled
+    Console logging: level warnings, 481 messages logged
+    Monitor logging: disabled
+    Buffer logging: level informational, 23977 messages logged
+    Trap logging: level informational, facility 20, 23977 messages logged
+    Global TCP syslog stats::
+        NOT_PUTABLE: 0, ALL_CHANNEL_DOWN: 0
+        CHANNEL_FLAP_CNT: 0, SYSLOG_PKT_LOSS: 0
+        PARTIAL_REWRITE_CNT: 0
+    Permit-hostdown logging: disabled
+    History logging: disabled
+    Device ID: hostname "Edge-FW"
+    Mail logging: disabled
+    ASDM logging: disabled
+Aug 17 2026 23:16:29 Edge-FW : %ASA-5-111008: User 'enable_15' executed the 'clear logging buffer' command.
+Aug 17 2026 23:16:29 Edge-FW : %ASA-5-111010: User 'enable_15', running 'CLI' from IP 0.0.0.0, executed 'clear logging buffer'
+Edge-FW# Aug 17 2026 23:16:32 Edge-FW : %ASA-4-106023: Deny tcp src OUTSIDE:185.92.100.1/56526 dst INSIDE:10.2.1.10/53 by access-group "OUTSIDE_IN" [0x0, 0x0]
+Aug 17 2026 23:16:33 Edge-FW : %ASA-4-106023: Deny tcp src OUTSIDE:185.92.100.1/56526 dst INSIDE:10.2.1.10/53 by access-group "OUTSIDE_IN" [0x0, 0x0]
+Aug 17 2026 23:16:34 Edge-FW : %ASA-4-106023: Deny tcp src OUTSIDE:185.92.100.1/56526 dst INSIDE:10.2.1.10/53 by access-group "OUTSIDE_IN" [0x0, 0x0]
+Aug 17 2026 23:16:35 Edge-FW : %ASA-4-733100: [ Scanning] drop rate-1 exceeded. Current burst rate is 0 per second, max configured rate is 10; Current average rate is 6 per second, max configured rate is 5; Cumulative total count is 3992
+Aug 17 2026 23:16:55 Edge-FW : %ASA-4-733100: [ Scanning] drop rate-1 exceeded. Current burst rate is 0 per second, max configured rate is 10; Current average rate is 6 per second, max configured rate is 5; Cumulative total count is 3991
+
+Edge-FW# 
+Edge-FW# sh log
+Syslog logging: enabled
+    Facility: 20
+    Timestamp logging: enabled
+    Timezone: enabled
+    Logging Format: disabled
+    Hide Username logging: enabled
+    Standby logging: disabled
+    Debug-trace logging: disabled
+    Console logging: level warnings, 486 messages logged
+    Monitor logging: disabled
+    Buffer logging: level informational, 23982 messages logged
+    Trap logging: level informational, facility 20, 23982 messages logged
+    Global TCP syslog stats::
+        NOT_PUTABLE: 0, ALL_CHANNEL_DOWN: 0
+        CHANNEL_FLAP_CNT: 0, SYSLOG_PKT_LOSS: 0
+        PARTIAL_REWRITE_CNT: 0
+    Permit-hostdown logging: disabled
+    History logging: disabled
+    Device ID: hostname "Edge-FW"
+    Mail logging: disabled
+    ASDM logging: disabled
+Aug 17 2026 23:16:29 Edge-FW : %ASA-5-111008: User 'enable_15' executed the 'clear logging buffer' command.
+Aug 17 2026 23:16:29 Edge-FW : %ASA-5-111010: User 'enable_15', running 'CLI' from IP 0.0.0.0, executed 'clear logging buffer'
+Aug 17 2026 23:16:32 Edge-FW : %ASA-4-106023: Deny tcp src OUTSIDE:185.92.100.1/56526 dst INSIDE:10.2.1.10/53 by access-group "OUTSIDE_IN" [0x0, 0x0]
+Aug 17 2026 23:16:33 Edge-FW : %ASA-4-106023: Deny tcp src OUTSIDE:185.92.100.1/56526 dst INSIDE:10.2.1.10/53 by access-group "OUTSIDE_IN" [0x0, 0x0]
+Aug 17 2026 23:16:34 Edge-FW : %ASA-4-106023: Deny tcp src OUTSIDE:185.92.100.1/56526 dst INSIDE:10.2.1.10/53 by access-group "OUTSIDE_IN" [0x0, 0x0]
+Aug 17 2026 23:16:35 Edge-FW : %ASA-4-733100: [ Scanning] drop rate-1 exceeded. Current burst rate is 0 per second, max configured rate is 10; Current average rate is 6 per second, max configured rate is 5; Cumulative total count is 3992
+Aug 17 2026 23:16:55 Edge-FW : %ASA-4-733100: [ Scanning] drop rate-1 exceeded. Current burst rate is 0 per second, max configured rate is 10; Current average rate is 6 per second, max configured rate is 5; Cumulative total count is 3991
+Edge-FW# 

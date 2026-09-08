@@ -1,0 +1,36 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2026.08.20 15:25:27 =~=~=~=~=~=~=~=~=~=~=~=
+
+Edge-FW# 
+Edge-FW# sh logclear log buffer 
+Edge-FW# clear log buffer 
+Edge-FW# sh log
+Syslog logging: enabled
+    Facility: 20
+    Timestamp logging: enabled
+    Timezone: enabled
+    Logging Format: disabled
+    Hide Username logging: enabled
+    Standby logging: disabled
+    Debug-trace logging: disabled
+    Console logging: level warnings, 72 messages logged
+    Monitor logging: disabled
+    Buffer logging: level informational, 692 messages logged
+    Trap logging: level informational, facility 20, 692 messages logged
+    Global TCP syslog stats::
+        NOT_PUTABLE: 0, ALL_CHANNEL_DOWN: 0
+        CHANNEL_FLAP_CNT: 0, SYSLOG_PKT_LOSS: 0
+        PARTIAL_REWRITE_CNT: 0
+    Permit-hostdown logging: disabled
+    History logging: disabled
+    Device ID: hostname "Edge-FW"
+    Mail logging: disabled
+    ASDM logging: disabled
+Aug 20 2026 15:25:57 Edge-FW : %ASA-5-111008: User 'enable_15' executed the 'clear logging buffer' command.
+Aug 20 2026 15:25:57 Edge-FW : %ASA-5-111010: User 'enable_15', running 'CLI' from IP 0.0.0.0, executed 'clear logging buffer'
+Aug 20 2026 15:26:01 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(61988) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 20 2026 15:26:01 Edge-FW : %ASA-6-302015: Built inbound UDP connection 65 for DMZ:10.0.1.10/61988 (10.0.1.10/61988) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 20 2026 15:26:01 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(51202) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 20 2026 15:26:01 Edge-FW : %ASA-6-302015: Built inbound UDP connection 66 for DMZ:10.0.1.10/51202 (10.0.1.10/51202) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 20 2026 15:26:01 Edge-FW : %ASA-6-302016: Teardown UDP connection 65 for DMZ:10.0.1.10/61988 to INSIDE:10.2.1.10/53 duration 0:00:00 bytes 76 -1 -1
+Aug 20 2026 15:26:01 Edge-FW : %ASA-6-302016: Teardown UDP connection 66 for DMZ:10.0.1.10/51202 to INSIDE:10.2.1.10/53 duration 0:00:00 bytes 117 -1 -1
+Edge-FW# 

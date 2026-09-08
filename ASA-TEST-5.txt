@@ -1,0 +1,562 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2026.08.21 23:08:44 =~=~=~=~=~=~=~=~=~=~=~=
+sh logg
+Syslog logging: enabled
+    Facility: 20
+    Timestamp logging: enabled
+    Timezone: enabled
+    Logging Format: disabled
+    Hide Username logging: enabled
+    Standby logging: disabled
+    Debug-trace logging: disabled
+    Console logging: level warnings, 6 messages logged
+    Monitor logging: disabled
+    Buffer logging: level informational, 411 messages logged
+    Trap logging: level informational, facility 20, 411 messages logged
+    Global TCP syslog stats::
+        NOT_PUTABLE: 0, ALL_CHANNEL_DOWN: 0
+        CHANNEL_FLAP_CNT: 0, SYSLOG_PKT_LOSS: 0
+        PARTIAL_REWRITE_CNT: 0
+    Permit-hostdown logging: disabled
+    History logging: disabled
+    Device ID: hostname "Edge-FW"
+    Mail logging: disabled
+    ASDM logging: disabled
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'object  network INSIDE-NET' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'object  network INSIDE-NET'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'nat INSIDE OUTSIDE dynamic interface' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'nat INSIDE OUTSIDE dynamic interface'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'object  network LANUSERS-NET' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'object  network LANUSERS-NET'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'nat LANUSERS OUTSIDE dynamic interface' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'nat LANUSERS OUTSIDE dynamic interface'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'object  network WEB-SERVER-HTTP' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'object  network WEB-SERVER-HTTP'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-305011: Built static TCP translation from DMZ:10.0.1.10/80 to OUTSIDE:185.92.200.5/80
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'nat DMZ OUTSIDE static 185.92.200.5 service tcp www www' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'nat DMZ OUTSIDE static 185.92.200.5 service tcp www www'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'object  network WEB-SERVER-HTTPS' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'object  network WEB-SERVER-HTTPS'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-305011: Built static TCP translation from DMZ:10.0.1.10/443 to OUTSIDE:185.92.200.5/443
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'nat DMZ OUTSIDE static 185.92.200.5 service tcp https https' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'nat DMZ OUTSIDE static 185.92.200.5 service tcp https https'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'route OUTSIDE 0.0.0.0 185.92.100.1 1' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'route OUTSIDE 0.0.0.0 185.92.100.1 1'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'timeout igp stale-route 011' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'timeout igp stale-route 011'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'user-identity default-domain LOCAL' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'user-identity default-domain LOCAL'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'aaa authentication login-history' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'aaa authentication login-history'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'http server enable' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'http server enable'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'no snmp-server location' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'no snmp-server location'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'no snmp-server contact' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'no snmp-server contact'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'crypto ipsec security-association pmtu-aging infinite' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'crypto ipsec security-association pmtu-aging infinite'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'crypto ca trustpoint _SmartCallHome_ServerCA' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'crypto ca trustpoint _SmartCallHome_ServerCA'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'no validation-usage' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'no validation-usage'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'crl configure' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'crl configure'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'crypto ca trustpoint _SmartCallHome_ServerCA2' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'crypto ca trustpoint _SmartCallHome_ServerCA2'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'no validation-usage' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'no validation-usage'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'crl configure' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'crl configure'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'crypto ca trustpool policy' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'crypto ca trustpool policy'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'auto-import' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'auto-import'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'crypto ca certificate chain _SmartCallHome_ServerCA' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'crypto ca certificate chain _SmartCallHome_ServerCA'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'certificate ca' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'certificate ca'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'quit' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'quit'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'crypto ca certificate chain _SmartCallHome_ServerCA2' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'crypto ca certificate chain _SmartCallHome_ServerCA2'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'certificate ca' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'certificate ca'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the '<cr>' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed '<cr>'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'quit' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'quit'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'ssh key-exchange group dh-group14-sha256' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'ssh key-exchange group dh-group14-sha256'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'console timeout 0' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'console timeout 0'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'threat-detection basic-threat' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'threat-detection basic-threat'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'threat-detection statistics access-list' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'threat-detection statistics access-list'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'threat-detection statistics tcp-intercept rate-interval 30 burst-rate 400 average-rate 200' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'threat-detection statistics tcp-intercept rate-interval 30 burst-rate 400 average-rate 200'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'dynamic-access-policy-record DfltAccessPolicy' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'dynamic-access-policy-record DfltAccessPolicy'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'class-map WEB-FLOOD-CLASS' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'class-map WEB-FLOOD-CLASS'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'match access-list WEB-FLOOD-ACL' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'match access-list WEB-FLOOD-ACL'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'class-map inspection_default' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'class-map inspection_default'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'match default-inspection-traffic' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'match default-inspection-traffic'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'policy-map type inspect dns preset_dns_map' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'policy-map type inspect dns preset_dns_map'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'parameters' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'parameters'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'message-length maximum client auto' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'message-length maximum client auto'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'message-length maximum 512' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'message-length maximum 512'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'no tcp-inspection' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'no tcp-inspection'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'policy-map WEB-FLOOD-POLICY' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'policy-map WEB-FLOOD-POLICY'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'class WEB-FLOOD-CLASS' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'class WEB-FLOOD-CLASS'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'set connection embryonic-conn-max 200' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'set connection embryonic-conn-max 200'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'policy-map type inspect dns migrated_dns_map_1' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'policy-map type inspect dns migrated_dns_map_1'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'parameters' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'parameters'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'message-length maximum client auto' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'message-length maximum client auto'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'message-length maximum 512' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'message-length maximum 512'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'no tcp-inspection' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'no tcp-inspection'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'policy-map global_policy' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'policy-map global_policy'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'class inspection_default' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'class inspection_default'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'inspect dns migrated_dns_map_1' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'inspect dns migrated_dns_map_1'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'inspect ftp' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'inspect ftp'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'inspect h323 h225' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'inspect h323 h225'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'inspect h323 ras' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'inspect h323 ras'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'inspect ip-options' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'inspect ip-options'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'inspect netbios' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'inspect netbios'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'inspect rsh' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'inspect rsh'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'inspect rtsp' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'inspect rtsp'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'inspect skinny' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'inspect skinny'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'inspect esmtp' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'inspect esmtp'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'inspect sqlnet' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'inspect sqlnet'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'inspect sunrpc' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'inspect sunrpc'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'inspect tftp' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'inspect tftp'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'inspect sip' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'inspect sip'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'inspect icmp' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'inspect icmp'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'policy-map type inspect dns migrated_dns_map_2' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'policy-map type inspect dns migrated_dns_map_2'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'parameters' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'parameters'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'message-length maximum client auto' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'message-length maximum client auto'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'message-length maximum 512' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'message-length maximum 512'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'no tcp-inspection' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'no tcp-inspection'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'service-policy global_policy global' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'service-policy global_policy global'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'service-policy WEB-FLOOD-POLICY interface OUTSIDE' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'service-policy WEB-FLOOD-POLICY interface OUTSIDE'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'prompt hostname context' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'prompt hostname context'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'no call-home reporting anonymous' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'no call-home reporting anonymous'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'call-home' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'call-home'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'profile License' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'profile License'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'destination address http https://tools.cisco.com/its/service/oddce/services/DDCEService' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'destination address http https://tools.cisco.com/its/service/oddce/services/DDCEService'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'destination transport-method http' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'destination transport-method http'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'profile CiscoTAC-1' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'profile CiscoTAC-1'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'no active' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'no active'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'destination address http https://tools.cisco.com/its/service/oddce/services/DDCEService' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'destination address http https://tools.cisco.com/its/service/oddce/services/DDCEService'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'destination address email callhome@cisco.com' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'destination address email callhome@cisco.com'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'destination transport-method http' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'destination transport-method http'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'subscribe-to-alert-group diagnostic' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'subscribe-to-alert-group diagnostic'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'subscribe-to-alert-group environment' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'subscribe-to-alert-group environment'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'subscribe-to-alert-group inventory periodic monthly' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'subscribe-to-alert-group inventory periodic monthly'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'subscribe-to-alert-group configuration periodic monthly' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'subscribe-to-alert-group configuration periodic monthly'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111008: User 'Config' executed the 'subscribe-to-alert-group telemetry periodic daily' command.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-5-111010: User 'Config', running 'N/A' from IP 0.0.0.0, executed 'subscribe-to-alert-group telemetry periodic daily'
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-302020: Built outbound ICMP connection for faddr ff02::1:ff00:1/0 gaddr ::/0 laddr ::/0 type 135 code 0 Internal-Data0/0:RX[0]
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-302020: Built outbound ICMP connection for faddr ff02::1/0 gaddr fe80::200:1ff:fe00:1/0 laddr fe80::200:1ff:fe00:1/0 type 136 code 0 Internal-Data0/0:RX[0]
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-317079: Added connected route fd00:0:0:1::1/128 [0/0] via [nlp_int_tap] [In0/0] tableid [0]
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-317079: Added connected route fd00:0:0:1::1/64 [0/0] via [nlp_int_tap] [In0/0] tableid [0]
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-302020: Built outbound ICMP connection for faddr ff02::1/0 gaddr fd00:0:0:1::1/0 laddr fd00:0:0:1::1/0 type 136 code 0 Internal-Data0/0:RX[0]
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-302021: Teardown ICMP connection for faddr ff02::1/0 gaddr fe80::200:1ff:fe00:1/0 laddr fe80::200:1ff:fe00:1/0 type 136 code 0 Internal-Data0/0:RX[0]
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-302021: Teardown ICMP connection for faddr ff02::1:ff00:1/0 gaddr ::/0 laddr ::/0 type 135 code 0 Internal-Data0/0:RX[0]
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-302021: Teardown ICMP connection for faddr ff02::1/0 gaddr fd00:0:0:1::1/0 laddr fd00:0:0:1::1/0 type 136 code 0 Internal-Data0/0:RX[0]
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-317077: Added CONNECTED route 185.92.100.0 255.255.255.252 via 0.0.0.0 [0/0] on [OUTSIDE] [Gi0/0] tableid [0]
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-317077: Added CONNECTED route 185.92.100.2 255.255.255.255 via 0.0.0.0 [0/0] on [OUTSIDE] [Gi0/0] tableid [0]
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-317077: Added CONNECTED route 10.1.1.0 255.255.255.0 via 0.0.0.0 [0/0] on [LANUSERS] [Gi0/1.10] tableid [0]
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-317077: Added CONNECTED route 10.1.1.1 255.255.255.255 via 0.0.0.0 [0/0] on [LANUSERS] [Gi0/1.10] tableid [0]
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-317077: Added CONNECTED route 10.0.1.0 255.255.255.0 via 0.0.0.0 [0/0] on [DMZ] [Gi0/1.50] tableid [0]
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-317077: Added CONNECTED route 10.0.1.1 255.255.255.255 via 0.0.0.0 [0/0] on [DMZ] [Gi0/1.50] tableid [0]
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-317077: Added CONNECTED route 10.2.1.0 255.255.255.0 via 0.0.0.0 [0/0] on [INSIDE] [Gi0/1.100] tableid [0]
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-317077: Added CONNECTED route 10.2.1.1 255.255.255.255 via 0.0.0.0 [0/0] on [INSIDE] [Gi0/1.100] tableid [0]
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-317077: Added CONNECTED route 172.21.1.0 255.255.255.0 via 0.0.0.0 [0/0] on [MGMT] [Ma0/0] tableid [0]
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-317077: Added CONNECTED route 172.21.1.1 255.255.255.255 via 0.0.0.0 [0/0] on [MGMT] [Ma0/0] tableid [0]
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-444306: %SMART_LIC-6-EXPORT_CONTROLLED:Usage of export controlled features is not allowed
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-444306: %SMART_LIC-6-AGENT_READY:Smart Agent for Licensing is initialized
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-444306: %SMART_LIC-6-AGENT_ENABLED:Smart Agent for Licensing is enabled 
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-444306: %SMART_LIC-6-EXPORT_CONTROLLED:Usage of export controlled features is not allowed
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-720002: (VPN-Secondary) Starting VPN Stateful Failover Subsystem...
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-720003: (VPN-Secondary) Initialization of VPN Stateful Failover Component completed successfully
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-720004: (VPN-Secondary) VPN failover  main thread started.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-720005: (VPN-Secondary) VPN failover timer thread started.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-720006: (VPN-Secondary) VPN failover sync thread started.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-721001: (WebVPN-Secondary) WebVPN Failover SubSystem started successfully.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-769007: UPDATE: Image version is 9.22(2)32
+Aug 21 2026 23:06:50 Edge-FW : %ASA-4-769009: UPDATE: Image booted boot:/asa9222-32-smp-k8.bin is different from boot images
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-317077: Added STATIC route 0.0.0.0 0.0.0.0 via 185.92.100.1 [1/0] on [OUTSIDE] [Gi0/0] tableid [0]
+Aug 21 2026 23:06:50 Edge-FW : %ASA-4-411001: Line protocol on Interface Management0/0, changed state to up
+Aug 21 2026 23:06:50 Edge-FW : %ASA-4-411001: Line protocol on Interface GigabitEthernet0/0, changed state to up
+Aug 21 2026 23:06:50 Edge-FW : %ASA-4-411001: Line protocol on Interface GigabitEthernet0/1, changed state to up
+Aug 21 2026 23:06:50 Edge-FW : %ASA-6-199002: Startup completed.  Beginning operation.
+Aug 21 2026 23:06:50 Edge-FW : %ASA-2-444200: ASAv platform license state transitioned to Unlicensed.
+Aug 21 2026 23:06:51 Edge-FW : %ASA-5-120001: Call-Home Module started.
+Aug 21 2026 23:06:53 Edge-FW : %ASA-6-444306: %SMART_LIC-6-EXPORT_CONTROLLED:Usage of export controlled features is not allowed
+Aug 21 2026 23:07:51 Edge-FW : %ASA-5-502103: User priv level changed: Uname: enable_15 From: 1 To: 15
+Aug 21 2026 23:07:51 Edge-FW : %ASA-5-111008: User 'enable_1' executed the 'enable' command.
+Aug 21 2026 23:07:58 Edge-FW : %ASA-5-111008: User 'enable_15' executed the 'terminal pager 0' command.
+Aug 21 2026 23:07:58 Edge-FW : %ASA-5-111010: User 'enable_15', running 'CLI' from IP 0.0.0.0, executed 'terminal pager 0'
+Aug 21 2026 23:08:01 Edge-FW : %ASA-4-711004: Task ran for 380 msec, Process = ci/console, PC = 71809e45, Call stack =   0x000055d572cbdde3  0x000055d56ffe6fc2  0x000055d56ffe7dbd  0x000055d56ffe92c5  0x000055d56ff1ad02
+Edge-FW# 
+Edge-FW# 
+Edge-FW# 
+Edge-FW# 
+Edge-FW# 
+Edge-FW# clear log
+Edge-FW# clear logging bu
+Edge-FW# clear logging buffer 
+Edge-FW# sh log
+Syslog logging: enabled
+    Facility: 20
+    Timestamp logging: enabled
+    Timezone: enabled
+    Logging Format: disabled
+    Hide Username logging: enabled
+    Standby logging: disabled
+    Debug-trace logging: disabled
+    Console logging: level warnings, 6 messages logged
+    Monitor logging: disabled
+    Buffer logging: level informational, 413 messages logged
+    Trap logging: level informational, facility 20, 413 messages logged
+    Global TCP syslog stats::
+        NOT_PUTABLE: 0, ALL_CHANNEL_DOWN: 0
+        CHANNEL_FLAP_CNT: 0, SYSLOG_PKT_LOSS: 0
+        PARTIAL_REWRITE_CNT: 0
+    Permit-hostdown logging: disabled
+    History logging: disabled
+    Device ID: hostname "Edge-FW"
+    Mail logging: disabled
+    ASDM logging: disabled
+Aug 21 2026 23:08:55 Edge-FW : %ASA-5-111008: User 'enable_15' executed the 'clear logging buffer' command.
+Aug 21 2026 23:08:55 Edge-FW : %ASA-5-111010: User 'enable_15', running 'CLI' from IP 0.0.0.0, executed 'clear logging buffer'
+Edge-FW# 
+Edge-FW# 
+Edge-FW# 
+Edge-FW# sh logclear logging buffer 
+Edge-FW# clear logging buffer sh log               
+Syslog logging: enabled
+    Facility: 20
+    Timestamp logging: enabled
+    Timezone: enabled
+    Logging Format: disabled
+    Hide Username logging: enabled
+    Standby logging: disabled
+    Debug-trace logging: disabled
+    Console logging: level warnings, 6 messages logged
+    Monitor logging: disabled
+    Buffer logging: level informational, 417 messages logged
+    Trap logging: level informational, facility 20, 417 messages logged
+    Global TCP syslog stats::
+        NOT_PUTABLE: 0, ALL_CHANNEL_DOWN: 0
+        CHANNEL_FLAP_CNT: 0, SYSLOG_PKT_LOSS: 0
+        PARTIAL_REWRITE_CNT: 0
+    Permit-hostdown logging: disabled
+    History logging: disabled
+    Device ID: hostname "Edge-FW"
+    Mail logging: disabled
+    ASDM logging: disabled
+Aug 21 2026 23:10:16 Edge-FW : %ASA-5-111008: User 'enable_15' executed the 'clear logging buffer' command.
+Aug 21 2026 23:10:16 Edge-FW : %ASA-5-111010: User 'enable_15', running 'CLI' from IP 0.0.0.0, executed 'clear logging buffer'
+Aug 21 2026 23:10:49 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(36802) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 21 2026 23:10:49 Edge-FW : %ASA-6-302013: Built inbound TCP connection 4 for OUTSIDE:185.92.100.1/36802 (185.92.100.1/36802) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Edge-FW# 
+Edge-FW# 
+Edge-FW# 
+Edge-FW# 
+Edge-FW# 
+Edge-FW# sh logclear logging buffer 
+Edge-FW# 
+Edge-FW# 
+Edge-FW# 
+Edge-FW# clear logging buffer sh log               
+Syslog logging: enabled
+    Facility: 20
+    Timestamp logging: enabled
+    Timezone: enabled
+    Logging Format: disabled
+    Hide Username logging: enabled
+    Standby logging: disabled
+    Debug-trace logging: disabled
+    Console logging: level warnings, 6 messages logged
+    Monitor logging: disabled
+    Buffer logging: level informational, 458 messages logged
+    Trap logging: level informational, facility 20, 458 messages logged
+    Global TCP syslog stats::
+        NOT_PUTABLE: 0, ALL_CHANNEL_DOWN: 0
+        CHANNEL_FLAP_CNT: 0, SYSLOG_PKT_LOSS: 0
+        PARTIAL_REWRITE_CNT: 0
+    Permit-hostdown logging: disabled
+    History logging: disabled
+    Device ID: hostname "Edge-FW"
+    Mail logging: disabled
+    ASDM logging: disabled
+Aug 21 2026 23:11:17 Edge-FW : %ASA-5-111008: User 'enable_15' executed the 'clear logging buffer' command.
+Aug 21 2026 23:11:17 Edge-FW : %ASA-5-111010: User 'enable_15', running 'CLI' from IP 0.0.0.0, executed 'clear logging buffer'
+Aug 21 2026 23:11:19 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(61974) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 21 2026 23:11:19 Edge-FW : %ASA-6-302015: Built inbound UDP connection 8 for DMZ:10.0.1.10/61974 (10.0.1.10/61974) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 21 2026 23:11:24 Edge-FW : %ASA-6-106100: access-list OUTSIDE_IN permitted tcp OUTSIDE/185.92.100.1(59486) -> DMZ/10.0.1.10(80) hit-cnt 1 first hit [0x748cad50, 0x00000000]
+Aug 21 2026 23:11:24 Edge-FW : %ASA-6-302013: Built inbound TCP connection 9 for OUTSIDE:185.92.100.1/59486 (185.92.100.1/59486) to DMZ:10.0.1.10/80 (185.92.200.5/80) -1 -1
+Aug 21 2026 23:11:24 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(65294) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 21 2026 23:11:24 Edge-FW : %ASA-6-302015: Built inbound UDP connection 10 for DMZ:10.0.1.10/65294 (10.0.1.10/65294) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 21 2026 23:11:24 Edge-FW : %ASA-6-302014: Teardown TCP connection 9 for OUTSIDE:185.92.100.1/59486 to DMZ:10.0.1.10/80 duration 0:00:00 bytes 1474 TCP FINs from OUTSIDE -1 -1
+Aug 21 2026 23:11:26 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(57582) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 21 2026 23:11:26 Edge-FW : %ASA-6-302015: Built inbound UDP connection 11 for DMZ:10.0.1.10/57582 (10.0.1.10/57582) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 21 2026 23:11:26 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(51799) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 21 2026 23:11:26 Edge-FW : %ASA-6-302015: Built inbound UDP connection 12 for DMZ:10.0.1.10/51799 (10.0.1.10/51799) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 21 2026 23:11:26 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(49194) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 21 2026 23:11:26 Edge-FW : %ASA-6-302015: Built inbound UDP connection 13 for DMZ:10.0.1.10/49194 (10.0.1.10/49194) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 21 2026 23:11:30 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(61477) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 21 2026 23:11:30 Edge-FW : %ASA-6-302015: Built inbound UDP connection 14 for DMZ:10.0.1.10/61477 (10.0.1.10/61477) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 21 2026 23:11:31 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(60514) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 21 2026 23:11:31 Edge-FW : %ASA-6-302015: Built inbound UDP connection 15 for DMZ:10.0.1.10/60514 (10.0.1.10/60514) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 21 2026 23:11:36 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(63513) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 21 2026 23:11:36 Edge-FW : %ASA-6-302015: Built inbound UDP connection 16 for DMZ:10.0.1.10/63513 (10.0.1.10/63513) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 21 2026 23:11:38 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted tcp DMZ/10.0.1.10(58206) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0xf23dcb3d, 0x00000000]
+Aug 21 2026 23:11:38 Edge-FW : %ASA-6-302013: Built inbound TCP connection 17 for DMZ:10.0.1.10/58206 (10.0.1.10/58206) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 21 2026 23:11:38 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(63997) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 21 2026 23:11:38 Edge-FW : %ASA-6-302015: Built inbound UDP connection 18 for DMZ:10.0.1.10/63997 (10.0.1.10/63997) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 21 2026 23:11:44 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(51309) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 21 2026 23:11:44 Edge-FW : %ASA-6-302015: Built inbound UDP connection 19 for DMZ:10.0.1.10/51309 (10.0.1.10/51309) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 21 2026 23:11:48 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(61398) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 21 2026 23:11:48 Edge-FW : %ASA-6-302015: Built inbound UDP connection 20 for DMZ:10.0.1.10/61398 (10.0.1.10/61398) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 21 2026 23:11:56 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(63322) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 21 2026 23:11:56 Edge-FW : %ASA-6-302015: Built inbound UDP connection 21 for DMZ:10.0.1.10/63322 (10.0.1.10/63322) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 21 2026 23:12:08 Edge-FW : %ASA-6-302014: Teardown TCP connection 17 for DMZ:10.0.1.10/58206 to INSIDE:10.2.1.10/53 duration 0:00:30 bytes 0 SYN Timeout -1 -1
+Aug 21 2026 23:12:09 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(59855) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 21 2026 23:12:09 Edge-FW : %ASA-6-302015: Built inbound UDP connection 22 for DMZ:10.0.1.10/59855 (10.0.1.10/59855) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Edge-FW# 

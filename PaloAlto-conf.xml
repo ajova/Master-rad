@@ -1,0 +1,1203 @@
+<?xml version="1.0"?>
+<config version="11.2.0" urldb="paloaltonetworks" detail-version="11.2.3">
+  <mgt-config>
+    <users>
+      <entry name="admin">
+        <phash>$5$jsvekygc$R77jTEaTH7C/MdnWVm6OKbxCEZmHod0HLn4.QF2H97C</phash>
+        <permissions>
+          <role-based>
+            <superuser>yes</superuser>
+          </role-based>
+        </permissions>
+      </entry>
+      <entry name="__openconfig">
+        <phash>$5$dfaouixy$YQ4BknCan9XVp5fSbTqNAuOagzU1xCqpn7nEzyqT014</phash>
+        <permissions>
+          <role-based>
+            <deviceadmin>
+              <member>localhost.localdomain</member>
+            </deviceadmin>
+          </role-based>
+        </permissions>
+      </entry>
+    </users>
+    <password-complexity>
+      <enabled>yes</enabled>
+      <minimum-length>8</minimum-length>
+    </password-complexity>
+  </mgt-config>
+  <shared>
+    <application/>
+    <application-group/>
+    <service/>
+    <service-group/>
+    <botnet>
+      <configuration>
+        <http>
+          <dynamic-dns>
+            <enabled>yes</enabled>
+            <threshold>5</threshold>
+          </dynamic-dns>
+          <malware-sites>
+            <enabled>yes</enabled>
+            <threshold>5</threshold>
+          </malware-sites>
+          <recent-domains>
+            <enabled>yes</enabled>
+            <threshold>5</threshold>
+          </recent-domains>
+          <ip-domains>
+            <enabled>yes</enabled>
+            <threshold>10</threshold>
+          </ip-domains>
+          <executables-from-unknown-sites>
+            <enabled>yes</enabled>
+            <threshold>5</threshold>
+          </executables-from-unknown-sites>
+        </http>
+        <other-applications>
+          <irc>yes</irc>
+        </other-applications>
+        <unknown-applications>
+          <unknown-tcp>
+            <destinations-per-hour>10</destinations-per-hour>
+            <sessions-per-hour>10</sessions-per-hour>
+            <session-length>
+              <maximum-bytes>100</maximum-bytes>
+              <minimum-bytes>50</minimum-bytes>
+            </session-length>
+          </unknown-tcp>
+          <unknown-udp>
+            <destinations-per-hour>10</destinations-per-hour>
+            <sessions-per-hour>10</sessions-per-hour>
+            <session-length>
+              <maximum-bytes>100</maximum-bytes>
+              <minimum-bytes>50</minimum-bytes>
+            </session-length>
+          </unknown-udp>
+        </unknown-applications>
+      </configuration>
+      <report>
+        <topn>100</topn>
+        <scheduled>yes</scheduled>
+      </report>
+    </botnet>
+    <certificate>
+      <entry name="websrv">
+        <subject-hash>da958124</subject-hash>
+        <issuer-hash>da958124</issuer-hash>
+        <not-valid-before>Aug 19 06:17:47 2026 GMT</not-valid-before>
+        <issuer>/CN=coffee-brew.com.master.local</issuer>
+        <not-valid-after>Aug 19 06:27:47 2027 GMT</not-valid-after>
+        <common-name>coffee-brew.com.master.local</common-name>
+        <expiry-epoch>1818656867</expiry-epoch>
+        <ca>yes</ca>
+        <subject>/CN=coffee-brew.com.master.local</subject>
+        <public-key>-----BEGIN CERTIFICATE-----
+MIIDZDCCAkygAwIBAgIQUB+0iyEDArNB+BehBUbjuDANBgkqhkiG9w0BAQsFADAn
+MSUwIwYDVQQDDBxjb2ZmZWUtYnJldy5jb20ubWFzdGVyLmxvY2FsMB4XDTI2MDgx
+OTA2MTc0N1oXDTI3MDgxOTA2Mjc0N1owJzElMCMGA1UEAwwcY29mZmVlLWJyZXcu
+Y29tLm1hc3Rlci5sb2NhbDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB
+AMNoJ7sPYgepCzh89TXrkHbuTxuKzmjVx+4nFe+YHy9sCDCOnqJXC8CXylkQ8Ctf
+rVx9PvRyYl3NhxI51dKUTmOCFfJithO8Ds4n18vCgUQfyYL5XPzgBH6t67ynvs7y
+CNAuitpuvU+xk5iOi85r8JIZ7qwgHjnhPCZgdJNmGyB8trhItjaPhwSDFARjlzzs
+/t22yO4FuXKPrLOiNZFueTDSUfpzBalzxXiWAX4FiUAH/5C6X0S/zVGJ362U0sjS
+1WstQ9unbFjlaHzuFJjXkx1CY3+gLwMzXodp/ZEYR72FQ9NQ6Ig8pOoSVwQCMwJd
+1jd7SAdxNxF47tgtfxpYKXUCAwEAAaOBizCBiDAOBgNVHQ8BAf8EBAMCAqQwHQYD
+VR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMCcGA1UdEQQgMB6CHGNvZmZlZS1i
+cmV3LmNvbS5tYXN0ZXIubG9jYWwwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQU
+jCK/kqToW9rEE6NiKE6LMyGZpVYwDQYJKoZIhvcNAQELBQADggEBAA4tVz/yWTea
+6PALBv0pasxaCtlbLdBXLp/63ElhV2X5AQTnaLrykSrXlJKWp8Lfv3y/LioTmuAW
+jlCS+lojEH2wxEgpA+GOyQV7GfQKMXbE4RJvDhtqONTelx9qODDbxPICg67Uaf5U
+dysyvfji9Zt8RY7jCvsjG9ieXV6dW38uIefbNfe0TEwTF9iXBkhmFWTvSNkvf8Vp
+qluFOv+C3YWICLokUHF4+i6drKm/yDC4/OizotgN8b/e8dENgxLdEm179m0KxRp3
+A3lAy2VDWIscN/gH7QX1uOCta33P0DBLS+NkLGZi/Iug2hkLSqwNeo6XOlnO1X2q
+69iqZ5wqv04=
+-----END CERTIFICATE-----
+</public-key>
+        <algorithm>RSA</algorithm>
+        <private-key>-AQ==xUk6oBHpQ9SFwmIU7fZXIzdVmu8=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</private-key>
+      </entry>
+    </certificate>
+  </shared>
+  <devices>
+    <entry name="localhost.localdomain">
+      <network>
+        <interface>
+          <ethernet>
+            <entry name="ethernet1/2">
+              <layer3>
+                <ip>
+                  <entry name="185.92.100.2/30"/>
+                  <entry name="185.92.200.5/29"/>
+                </ip>
+                <ndp-proxy>
+                  <enabled>no</enabled>
+                </ndp-proxy>
+                <sdwan-link-settings>
+                  <upstream-nat>
+                    <enable>no</enable>
+                    <static-ip/>
+                  </upstream-nat>
+                  <enable>no</enable>
+                  <ipv6-enable>no</ipv6-enable>
+                </sdwan-link-settings>
+                <lldp>
+                  <enable>no</enable>
+                </lldp>
+              </layer3>
+              <comment>Uplink to Internet</comment>
+            </entry>
+            <entry name="ethernet1/1">
+              <comment>Downlink to CORE switch</comment>
+              <layer3>
+                <units>
+                  <entry name="ethernet1/1.10">
+                    <tag>10</tag>
+                    <comment>User LAN</comment>
+                    <ip>
+                      <entry name="10.1.1.1/24"/>
+                    </ip>
+                    <interface-management-profile>ALLOW_PING</interface-management-profile>
+                    <sdwan-link-settings>
+                      <upstream-nat>
+                        <enable>no</enable>
+                        <static-ip/>
+                      </upstream-nat>
+                      <enable>no</enable>
+                      <ipv6-enable>no</ipv6-enable>
+                    </sdwan-link-settings>
+                    <ndp-proxy>
+                      <enabled>no</enabled>
+                    </ndp-proxy>
+                    <adjust-tcp-mss>
+                      <enable>no</enable>
+                    </adjust-tcp-mss>
+                  </entry>
+                  <entry name="ethernet1/1.50">
+                    <tag>50</tag>
+                    <ip>
+                      <entry name="10.0.1.1/24"/>
+                    </ip>
+                    <comment>DMZ Servers</comment>
+                    <interface-management-profile>ALLOW_PING</interface-management-profile>
+                    <sdwan-link-settings>
+                      <upstream-nat>
+                        <enable>no</enable>
+                        <static-ip/>
+                      </upstream-nat>
+                      <enable>no</enable>
+                      <ipv6-enable>no</ipv6-enable>
+                    </sdwan-link-settings>
+                    <ndp-proxy>
+                      <enabled>no</enabled>
+                    </ndp-proxy>
+                    <adjust-tcp-mss>
+                      <enable>no</enable>
+                    </adjust-tcp-mss>
+                  </entry>
+                  <entry name="ethernet1/1.100">
+                    <tag>100</tag>
+                    <ip>
+                      <entry name="10.2.1.1/24"/>
+                    </ip>
+                    <comment>Inside Servers</comment>
+                    <interface-management-profile>ALLOW_PING</interface-management-profile>
+                  </entry>
+                </units>
+              </layer3>
+            </entry>
+          </ethernet>
+        </interface>
+        <profiles>
+          <monitor-profile>
+            <entry name="default">
+              <interval>3</interval>
+              <threshold>5</threshold>
+              <action>wait-recover</action>
+            </entry>
+          </monitor-profile>
+          <interface-management-profile>
+            <entry name="ALLOW_PING">
+              <ping>yes</ping>
+              <http>no</http>
+              <https>no</https>
+            </entry>
+          </interface-management-profile>
+        </profiles>
+        <ike>
+          <crypto-profiles>
+            <ike-crypto-profiles>
+              <entry name="default">
+                <encryption>
+                  <member>aes-128-cbc</member>
+                  <member>3des</member>
+                </encryption>
+                <hash>
+                  <member>sha1</member>
+                </hash>
+                <dh-group>
+                  <member>group2</member>
+                </dh-group>
+                <lifetime>
+                  <hours>8</hours>
+                </lifetime>
+              </entry>
+              <entry name="Suite-B-GCM-128">
+                <encryption>
+                  <member>aes-128-cbc</member>
+                </encryption>
+                <hash>
+                  <member>sha256</member>
+                </hash>
+                <dh-group>
+                  <member>group19</member>
+                </dh-group>
+                <lifetime>
+                  <hours>8</hours>
+                </lifetime>
+              </entry>
+              <entry name="Suite-B-GCM-256">
+                <encryption>
+                  <member>aes-256-cbc</member>
+                </encryption>
+                <hash>
+                  <member>sha384</member>
+                </hash>
+                <dh-group>
+                  <member>group20</member>
+                </dh-group>
+                <lifetime>
+                  <hours>8</hours>
+                </lifetime>
+              </entry>
+            </ike-crypto-profiles>
+            <ipsec-crypto-profiles>
+              <entry name="default">
+                <esp>
+                  <encryption>
+                    <member>aes-128-cbc</member>
+                    <member>3des</member>
+                  </encryption>
+                  <authentication>
+                    <member>sha1</member>
+                  </authentication>
+                </esp>
+                <dh-group>group2</dh-group>
+                <lifetime>
+                  <hours>1</hours>
+                </lifetime>
+              </entry>
+              <entry name="Suite-B-GCM-128">
+                <esp>
+                  <encryption>
+                    <member>aes-128-gcm</member>
+                  </encryption>
+                  <authentication>
+                    <member>none</member>
+                  </authentication>
+                </esp>
+                <dh-group>group19</dh-group>
+                <lifetime>
+                  <hours>1</hours>
+                </lifetime>
+              </entry>
+              <entry name="Suite-B-GCM-256">
+                <esp>
+                  <encryption>
+                    <member>aes-256-gcm</member>
+                  </encryption>
+                  <authentication>
+                    <member>none</member>
+                  </authentication>
+                </esp>
+                <dh-group>group20</dh-group>
+                <lifetime>
+                  <hours>1</hours>
+                </lifetime>
+              </entry>
+            </ipsec-crypto-profiles>
+            <global-protect-app-crypto-profiles>
+              <entry name="default">
+                <encryption>
+                  <member>aes-128-cbc</member>
+                </encryption>
+                <authentication>
+                  <member>sha1</member>
+                </authentication>
+              </entry>
+            </global-protect-app-crypto-profiles>
+          </crypto-profiles>
+        </ike>
+        <qos>
+          <profile>
+            <entry name="default">
+              <class-bandwidth-type>
+                <mbps>
+                  <class>
+                    <entry name="class1">
+                      <priority>real-time</priority>
+                    </entry>
+                    <entry name="class2">
+                      <priority>high</priority>
+                    </entry>
+                    <entry name="class3">
+                      <priority>high</priority>
+                    </entry>
+                    <entry name="class4">
+                      <priority>medium</priority>
+                    </entry>
+                    <entry name="class5">
+                      <priority>medium</priority>
+                    </entry>
+                    <entry name="class6">
+                      <priority>low</priority>
+                    </entry>
+                    <entry name="class7">
+                      <priority>low</priority>
+                    </entry>
+                    <entry name="class8">
+                      <priority>low</priority>
+                    </entry>
+                  </class>
+                </mbps>
+              </class-bandwidth-type>
+            </entry>
+          </profile>
+        </qos>
+        <virtual-router>
+          <entry name="default">
+            <protocol>
+              <bgp>
+                <enable>no</enable>
+                <dampening-profile>
+                  <entry name="default">
+                    <cutoff>1.25</cutoff>
+                    <reuse>0.5</reuse>
+                    <max-hold-time>900</max-hold-time>
+                    <decay-half-life-reachable>300</decay-half-life-reachable>
+                    <decay-half-life-unreachable>900</decay-half-life-unreachable>
+                    <enable>yes</enable>
+                  </entry>
+                </dampening-profile>
+                <routing-options>
+                  <graceful-restart>
+                    <enable>yes</enable>
+                  </graceful-restart>
+                </routing-options>
+              </bgp>
+              <rip>
+                <enable>no</enable>
+              </rip>
+              <ospf>
+                <enable>no</enable>
+              </ospf>
+              <ospfv3>
+                <enable>no</enable>
+              </ospfv3>
+            </protocol>
+            <interface>
+              <member>ethernet1/1.10</member>
+              <member>ethernet1/1.50</member>
+              <member>ethernet1/1.100</member>
+              <member>ethernet1/2</member>
+            </interface>
+            <routing-table>
+              <ip>
+                <static-route>
+                  <entry name="Default route">
+                    <nexthop>
+                      <ip-address>185.92.100.1</ip-address>
+                    </nexthop>
+                    <bfd>
+                      <profile>None</profile>
+                    </bfd>
+                    <interface>ethernet1/2</interface>
+                    <metric>10</metric>
+                    <destination>0.0.0.0/0</destination>
+                    <route-table>
+                      <unicast/>
+                    </route-table>
+                  </entry>
+                </static-route>
+              </ip>
+            </routing-table>
+            <ecmp>
+              <algorithm>
+                <ip-modulo/>
+              </algorithm>
+            </ecmp>
+          </entry>
+        </virtual-router>
+        <dhcp>
+          <interface>
+            <entry name="ethernet1/1.10">
+              <relay>
+                <ip>
+                  <enabled>yes</enabled>
+                  <server>
+                    <member>10.2.1.10</member>
+                  </server>
+                </ip>
+              </relay>
+            </entry>
+          </interface>
+        </dhcp>
+      </network>
+      <deviceconfig>
+        <system>
+          <type>
+            <static/>
+          </type>
+          <update-server>updates.paloaltonetworks.com</update-server>
+          <update-schedule>
+            <threats>
+              <recurring>
+                <weekly>
+                  <day-of-week>wednesday</day-of-week>
+                  <at>01:02</at>
+                  <action>download-only</action>
+                </weekly>
+              </recurring>
+            </threats>
+          </update-schedule>
+          <timezone>Europe/Belgrade</timezone>
+          <service>
+            <disable-telnet>yes</disable-telnet>
+            <disable-http>yes</disable-http>
+          </service>
+          <hostname>Edge-FW-PA</hostname>
+          <ip-address>172.21.1.1</ip-address>
+          <netmask>255.255.255.0</netmask>
+          <default-gateway>172.21.1.254</default-gateway>
+          <dns-setting>
+            <servers>
+              <primary>10.2.1.10</primary>
+            </servers>
+          </dns-setting>
+          <device-telemetry>
+            <device-health-performance>yes</device-health-performance>
+            <product-usage>yes</product-usage>
+            <threat-prevention>yes</threat-prevention>
+            <region>Americas</region>
+          </device-telemetry>
+          <domain>master.local</domain>
+          <route>
+            <service>
+              <entry name="dns">
+                <source>
+                  <address>10.2.1.1/24</address>
+                  <interface>ethernet1/1.100</interface>
+                </source>
+              </entry>
+            </service>
+          </route>
+        </system>
+        <setting>
+          <config>
+            <rematch>yes</rematch>
+          </config>
+          <management>
+            <hostname-type-in-syslog>FQDN</hostname-type-in-syslog>
+          </management>
+          <auto-mac-detect>yes</auto-mac-detect>
+        </setting>
+      </deviceconfig>
+      <vsys>
+        <entry name="vsys1">
+          <application/>
+          <application-group/>
+          <zone>
+            <entry name="OUTSIDE">
+              <network>
+                <layer3>
+                  <member>ethernet1/2</member>
+                </layer3>
+              </network>
+            </entry>
+            <entry name="LANUSERS">
+              <network>
+                <layer3>
+                  <member>ethernet1/1.10</member>
+                </layer3>
+              </network>
+            </entry>
+            <entry name="DMZ">
+              <network>
+                <layer3>
+                  <member>ethernet1/1.50</member>
+                </layer3>
+              </network>
+            </entry>
+            <entry name="INSIDE">
+              <network>
+                <layer3>
+                  <member>ethernet1/1.100</member>
+                </layer3>
+              </network>
+            </entry>
+          </zone>
+          <service/>
+          <service-group/>
+          <schedule/>
+          <rulebase>
+            <security>
+              <rules>
+                <entry name="Allow-Outside-to-WebServer" uuid="c2948156-b4b2-49ae-a19f-d875b1a9bdd7">
+                  <from>
+                    <member>OUTSIDE</member>
+                  </from>
+                  <to>
+                    <member>DMZ</member>
+                  </to>
+                  <source>
+                    <member>any</member>
+                  </source>
+                  <destination>
+                    <member>WEB-PUBLIC-IP</member>
+                  </destination>
+                  <application>
+                    <member>icmp</member>
+                    <member>ssl</member>
+                    <member>web-browsing</member>
+                  </application>
+                  <service>
+                    <member>application-default</member>
+                  </service>
+                  <action>allow</action>
+                  <log-start>no</log-start>
+                  <log-end>yes</log-end>
+                  <profile-setting>
+                    <profiles>
+                      <virus>
+                        <member>default-AV</member>
+                      </virus>
+                      <spyware>
+                        <member>default</member>
+                      </spyware>
+                      <vulnerability>
+                        <member>default</member>
+                      </vulnerability>
+                      <file-blocking>
+                        <member>basic file blocking</member>
+                      </file-blocking>
+                    </profiles>
+                  </profile-setting>
+                  <source-user>
+                    <member>any</member>
+                  </source-user>
+                  <category>
+                    <member>any</member>
+                  </category>
+                  <saas-user-list>
+                    <member>any</member>
+                  </saas-user-list>
+                  <saas-tenant-list>
+                    <member>any</member>
+                  </saas-tenant-list>
+                  <source-hip>
+                    <member>any</member>
+                  </source-hip>
+                  <destination-hip>
+                    <member>any</member>
+                  </destination-hip>
+                </entry>
+                <entry name="Allow-INSIDE-to-OUTSIDE" uuid="e138047d-2e46-4320-83df-317cae1c54db">
+                  <from>
+                    <member>INSIDE</member>
+                  </from>
+                  <to>
+                    <member>OUTSIDE</member>
+                  </to>
+                  <source>
+                    <member>INSIDE-NET</member>
+                  </source>
+                  <destination>
+                    <member>any</member>
+                  </destination>
+                  <application>
+                    <member>dns</member>
+                    <member>ntp</member>
+                    <member>ssl</member>
+                    <member>web-browsing</member>
+                  </application>
+                  <service>
+                    <member>application-default</member>
+                  </service>
+                  <action>allow</action>
+                  <log-end>yes</log-end>
+                  <profile-setting>
+                    <profiles>
+                      <url-filtering>
+                        <member>default</member>
+                      </url-filtering>
+                      <spyware>
+                        <member>default</member>
+                      </spyware>
+                      <vulnerability>
+                        <member>default</member>
+                      </vulnerability>
+                      <virus>
+                        <member>default</member>
+                      </virus>
+                      <file-blocking>
+                        <member>basic file blocking</member>
+                      </file-blocking>
+                    </profiles>
+                  </profile-setting>
+                </entry>
+                <entry name="Allow-DMZ-to-DNS" uuid="318d61b5-6b2a-4e59-a853-1006f38ff90f">
+                  <from>
+                    <member>DMZ</member>
+                  </from>
+                  <to>
+                    <member>INSIDE</member>
+                  </to>
+                  <source>
+                    <member>WEB-SERVER</member>
+                  </source>
+                  <destination>
+                    <member>DNS-SERVER</member>
+                  </destination>
+                  <application>
+                    <member>dns</member>
+                  </application>
+                  <service>
+                    <member>application-default</member>
+                  </service>
+                  <action>allow</action>
+                  <log-end>yes</log-end>
+                  <profile-setting>
+                    <profiles>
+                      <virus>
+                        <member>default</member>
+                      </virus>
+                      <spyware>
+                        <member>default</member>
+                      </spyware>
+                      <vulnerability>
+                        <member>default</member>
+                      </vulnerability>
+                    </profiles>
+                  </profile-setting>
+                </entry>
+                <entry name="Deny-DMZ-to-INSIDE" uuid="ee14f3fd-ed3a-4693-9b29-5663b3da9506">
+                  <from>
+                    <member>DMZ</member>
+                  </from>
+                  <to>
+                    <member>INSIDE</member>
+                  </to>
+                  <source>
+                    <member>DMZ-NET</member>
+                  </source>
+                  <destination>
+                    <member>INSIDE-NET</member>
+                  </destination>
+                  <application>
+                    <member>any</member>
+                  </application>
+                  <service>
+                    <member>any</member>
+                  </service>
+                  <action>deny</action>
+                  <log-end>yes</log-end>
+                </entry>
+                <entry name="Deny-DMZ-to-LANUSERS" uuid="28fac557-a363-41d9-8961-7200b9b94101">
+                  <from>
+                    <member>DMZ</member>
+                  </from>
+                  <to>
+                    <member>LANUSERS</member>
+                  </to>
+                  <source>
+                    <member>DMZ-NET</member>
+                  </source>
+                  <destination>
+                    <member>LANUSERS-NET</member>
+                  </destination>
+                  <application>
+                    <member>any</member>
+                  </application>
+                  <service>
+                    <member>any</member>
+                  </service>
+                  <action>deny</action>
+                  <log-end>yes</log-end>
+                </entry>
+                <entry name="Allow-LANUSERS-to-DHCP" uuid="11972b78-9fa4-49d4-b697-6e04b002fc4b">
+                  <from>
+                    <member>LANUSERS</member>
+                  </from>
+                  <to>
+                    <member>INSIDE</member>
+                  </to>
+                  <source>
+                    <member>any</member>
+                  </source>
+                  <destination>
+                    <member>DNS-SERVER</member>
+                  </destination>
+                  <application>
+                    <member>dhcp</member>
+                  </application>
+                  <service>
+                    <member>application-default</member>
+                  </service>
+                  <action>allow</action>
+                  <log-end>yes</log-end>
+                </entry>
+                <entry name="Allow-LANUSERS-to-WebServer" uuid="7d288d5b-8aa9-4262-8c97-b9fb3b45b2f9">
+                  <from>
+                    <member>LANUSERS</member>
+                  </from>
+                  <to>
+                    <member>DMZ</member>
+                  </to>
+                  <source>
+                    <member>LANUSERS-NET</member>
+                  </source>
+                  <destination>
+                    <member>WEB-SERVER</member>
+                  </destination>
+                  <application>
+                    <member>ssl</member>
+                    <member>web-browsing</member>
+                  </application>
+                  <service>
+                    <member>application-default</member>
+                  </service>
+                  <action>allow</action>
+                  <log-end>yes</log-end>
+                  <profile-setting>
+                    <profiles>
+                      <virus>
+                        <member>default</member>
+                      </virus>
+                      <spyware>
+                        <member>default</member>
+                      </spyware>
+                      <vulnerability>
+                        <member>default</member>
+                      </vulnerability>
+                      <file-blocking>
+                        <member>basic file blocking</member>
+                      </file-blocking>
+                    </profiles>
+                  </profile-setting>
+                </entry>
+                <entry name="Allow-LANUSERS-to-DNS" uuid="d2dfe6ad-65c6-456c-bb21-7b21e296e73d">
+                  <from>
+                    <member>LANUSERS</member>
+                  </from>
+                  <to>
+                    <member>INSIDE</member>
+                  </to>
+                  <source>
+                    <member>LANUSERS-NET</member>
+                  </source>
+                  <destination>
+                    <member>DNS-SERVER</member>
+                  </destination>
+                  <application>
+                    <member>dns</member>
+                  </application>
+                  <service>
+                    <member>application-default</member>
+                  </service>
+                  <action>allow</action>
+                  <log-end>yes</log-end>
+                  <profile-setting>
+                    <profiles>
+                      <virus>
+                        <member>default</member>
+                      </virus>
+                      <spyware>
+                        <member>default</member>
+                      </spyware>
+                      <vulnerability>
+                        <member>default</member>
+                      </vulnerability>
+                    </profiles>
+                  </profile-setting>
+                </entry>
+                <entry name="Deny-LANUSERS-to-INSIDE" uuid="e311ea56-0031-43d7-bb5e-597154783591">
+                  <from>
+                    <member>LANUSERS</member>
+                  </from>
+                  <to>
+                    <member>INSIDE</member>
+                  </to>
+                  <source>
+                    <member>LANUSERS-NET</member>
+                  </source>
+                  <destination>
+                    <member>INSIDE-NET</member>
+                  </destination>
+                  <application>
+                    <member>any</member>
+                  </application>
+                  <service>
+                    <member>any</member>
+                  </service>
+                  <action>deny</action>
+                  <log-end>yes</log-end>
+                </entry>
+                <entry name="Deny-LANUSERS-to-DMZ" uuid="62dafbb5-c544-4910-a9e7-0ad0cc23e455">
+                  <from>
+                    <member>LANUSERS</member>
+                  </from>
+                  <to>
+                    <member>DMZ</member>
+                  </to>
+                  <source>
+                    <member>LANUSERS-NET</member>
+                  </source>
+                  <destination>
+                    <member>DMZ-NET</member>
+                  </destination>
+                  <application>
+                    <member>any</member>
+                  </application>
+                  <service>
+                    <member>any</member>
+                  </service>
+                  <action>deny</action>
+                  <log-end>yes</log-end>
+                </entry>
+                <entry name="Allow-LANUSERS-to-Internet" uuid="d48ad681-1bea-4585-a9b1-52fbcc0e2f77">
+                  <from>
+                    <member>LANUSERS</member>
+                  </from>
+                  <to>
+                    <member>OUTSIDE</member>
+                  </to>
+                  <source>
+                    <member>LANUSERS-NET</member>
+                  </source>
+                  <destination>
+                    <member>any</member>
+                  </destination>
+                  <application>
+                    <member>any</member>
+                  </application>
+                  <service>
+                    <member>any</member>
+                  </service>
+                  <action>allow</action>
+                  <log-end>yes</log-end>
+                  <profile-setting>
+                    <profiles>
+                      <url-filtering>
+                        <member>default</member>
+                      </url-filtering>
+                      <file-blocking>
+                        <member>basic file blocking</member>
+                      </file-blocking>
+                      <virus>
+                        <member>default</member>
+                      </virus>
+                      <spyware>
+                        <member>default</member>
+                      </spyware>
+                      <vulnerability>
+                        <member>default</member>
+                      </vulnerability>
+                    </profiles>
+                  </profile-setting>
+                </entry>
+              </rules>
+            </security>
+            <default-security-rules>
+              <rules>
+                <entry name="intrazone-default" uuid="22544b05-c774-4fb2-8364-46a8b873b0eb">
+                  <log-end>yes</log-end>
+                  <action>allow</action>
+                  <log-start>no</log-start>
+                </entry>
+                <entry name="interzone-default" uuid="3091a4db-a004-4c6c-8084-91e347e3f0c6">
+                  <log-end>yes</log-end>
+                  <action>deny</action>
+                  <log-start>no</log-start>
+                </entry>
+              </rules>
+            </default-security-rules>
+            <nat>
+              <rules>
+                <entry name="NAT-WebServer-Inbound" uuid="dc161172-ccb0-4cd4-8107-8f4198d9545d">
+                  <from>
+                    <member>OUTSIDE</member>
+                  </from>
+                  <to>
+                    <member>OUTSIDE</member>
+                  </to>
+                  <source>
+                    <member>any</member>
+                  </source>
+                  <destination>
+                    <member>WEB-PUBLIC-IP</member>
+                  </destination>
+                  <service>any</service>
+                  <destination-translation>
+                    <translated-address>WEB-SERVER</translated-address>
+                  </destination-translation>
+                </entry>
+                <entry name="NAT-LANUSERS-Outbound" uuid="acf01162-3b65-4e58-9e71-b87ecf130663">
+                  <from>
+                    <member>LANUSERS</member>
+                  </from>
+                  <to>
+                    <member>OUTSIDE</member>
+                  </to>
+                  <source>
+                    <member>LANUSERS-NET</member>
+                  </source>
+                  <destination>
+                    <member>any</member>
+                  </destination>
+                  <service>any</service>
+                  <source-translation>
+                    <dynamic-ip-and-port>
+                      <interface-address>
+                        <interface>ethernet1/2</interface>
+                        <ip>185.92.100.2/30</ip>
+                      </interface-address>
+                    </dynamic-ip-and-port>
+                  </source-translation>
+                  <to-interface>any</to-interface>
+                </entry>
+                <entry name="NAT-INSIDE-Outbound" uuid="8289ec7d-ff54-4005-a369-49c256777016">
+                  <from>
+                    <member>INSIDE</member>
+                  </from>
+                  <to>
+                    <member>OUTSIDE</member>
+                  </to>
+                  <source>
+                    <member>INSIDE-NET</member>
+                  </source>
+                  <destination>
+                    <member>any</member>
+                  </destination>
+                  <service>any</service>
+                  <source-translation>
+                    <dynamic-ip-and-port>
+                      <interface-address>
+                        <interface>ethernet1/2</interface>
+                        <ip>185.92.100.2/30</ip>
+                      </interface-address>
+                    </dynamic-ip-and-port>
+                  </source-translation>
+                </entry>
+              </rules>
+            </nat>
+            <dos>
+              <rules>
+                <entry name="WEB-DOS-RULE" uuid="862a4e47-fa67-4060-a285-7dabe97e2583">
+                  <from>
+                    <zone>
+                      <member>OUTSIDE</member>
+                    </zone>
+                  </from>
+                  <to>
+                    <zone>
+                      <member>DMZ</member>
+                    </zone>
+                  </to>
+                  <source>
+                    <member>any</member>
+                  </source>
+                  <destination>
+                    <member>WEB-PUBLIC-IP</member>
+                  </destination>
+                  <service>
+                    <member>any</member>
+                  </service>
+                  <action>
+                    <protect/>
+                  </action>
+                  <protection>
+                    <classified>
+                      <profile>WEB-DOS-PROFILE</profile>
+                      <classification-criteria>
+                        <address>destination-ip-only</address>
+                      </classification-criteria>
+                    </classified>
+                  </protection>
+                </entry>
+              </rules>
+            </dos>
+            <decryption>
+              <rules>
+                <entry name="Decrypt-WebServer-Inbound" uuid="2c29e98b-e265-4590-b798-d1d0e6ee17f2">
+                  <from>
+                    <member>OUTSIDE</member>
+                  </from>
+                  <to>
+                    <member>DMZ</member>
+                  </to>
+                  <source>
+                    <member>any</member>
+                  </source>
+                  <destination>
+                    <member>WEB-PUBLIC-IP</member>
+                  </destination>
+                  <service>
+                    <member>any</member>
+                  </service>
+                  <category>
+                    <member>any</member>
+                  </category>
+                  <action>decrypt</action>
+                  <profile>default-decrypt-profile</profile>
+                  <log-success>yes</log-success>
+                  <type>
+                    <ssl-inbound-inspection>
+                      <certificates>
+                        <member>websrv</member>
+                      </certificates>
+                    </ssl-inbound-inspection>
+                  </type>
+                  <source-user>
+                    <member>any</member>
+                  </source-user>
+                  <source-hip>
+                    <member>any</member>
+                  </source-hip>
+                  <destination-hip>
+                    <member>any</member>
+                  </destination-hip>
+                  <disabled>no</disabled>
+                </entry>
+              </rules>
+            </decryption>
+          </rulebase>
+          <address>
+            <entry name="WEB-SERVER">
+              <ip-netmask>10.0.1.10/32</ip-netmask>
+              <description>Web Server</description>
+            </entry>
+            <entry name="DNS-SERVER">
+              <ip-netmask>10.2.1.10/32</ip-netmask>
+              <description>DC server</description>
+            </entry>
+            <entry name="INSIDE-NET">
+              <ip-netmask>10.2.1.0/24</ip-netmask>
+            </entry>
+            <entry name="DMZ-NET">
+              <ip-netmask>10.0.1.0/24</ip-netmask>
+            </entry>
+            <entry name="LANUSERS-NET">
+              <ip-netmask>10.1.1.0/24</ip-netmask>
+            </entry>
+            <entry name="WEB-PUBLIC-IP">
+              <ip-netmask>185.92.200.5/32</ip-netmask>
+              <description>NAT IP Web server</description>
+            </entry>
+          </address>
+          <profiles>
+            <dos-protection>
+              <entry name="WEB-DOS-PROFILE">
+                <type>classified</type>
+                <flood>
+                  <tcp-syn>
+                    <enable>yes</enable>
+                    <red>
+                      <alarm-rate>150</alarm-rate>
+                      <activate-rate>200</activate-rate>
+                      <maximal-rate>400</maximal-rate>
+                    </red>
+                  </tcp-syn>
+                </flood>
+              </entry>
+            </dos-protection>
+            <decryption>
+              <entry name="default-decrypt-profile">
+                <ssl-inbound-proxy>
+                  <block-unsupported-version>yes</block-unsupported-version>
+                  <block-unsupported-cipher>yes</block-unsupported-cipher>
+                </ssl-inbound-proxy>
+              </entry>
+            </decryption>
+            <virus>
+              <entry name="default-AV">
+                <decoder>
+                  <entry name="http">
+                    <action>reset-both</action>
+                    <wildfire-action>default</wildfire-action>
+                    <mlav-action>default</mlav-action>
+                  </entry>
+                  <entry name="http2">
+                    <action>reset-both</action>
+                    <wildfire-action>default</wildfire-action>
+                    <mlav-action>default</mlav-action>
+                  </entry>
+                  <entry name="smtp">
+                    <action>reset-both</action>
+                    <wildfire-action>default</wildfire-action>
+                    <mlav-action>default</mlav-action>
+                  </entry>
+                  <entry name="imap">
+                    <action>reset-both</action>
+                    <wildfire-action>default</wildfire-action>
+                    <mlav-action>default</mlav-action>
+                  </entry>
+                  <entry name="pop3">
+                    <action>reset-both</action>
+                    <wildfire-action>default</wildfire-action>
+                    <mlav-action>default</mlav-action>
+                  </entry>
+                  <entry name="ftp">
+                    <action>reset-both</action>
+                    <wildfire-action>default</wildfire-action>
+                    <mlav-action>default</mlav-action>
+                  </entry>
+                  <entry name="smb">
+                    <action>reset-both</action>
+                    <wildfire-action>default</wildfire-action>
+                    <mlav-action>default</mlav-action>
+                  </entry>
+                </decoder>
+                <mlav-engine-filebased-enabled>
+                  <entry name="Windows Executables">
+                    <mlav-policy-action>enable</mlav-policy-action>
+                  </entry>
+                  <entry name="PowerShell Script 1">
+                    <mlav-policy-action>enable</mlav-policy-action>
+                  </entry>
+                  <entry name="PowerShell Script 2">
+                    <mlav-policy-action>enable</mlav-policy-action>
+                  </entry>
+                  <entry name="Executable Linked Format">
+                    <mlav-policy-action>enable</mlav-policy-action>
+                  </entry>
+                  <entry name="MSOffice">
+                    <mlav-policy-action>enable</mlav-policy-action>
+                  </entry>
+                  <entry name="Shell">
+                    <mlav-policy-action>enable</mlav-policy-action>
+                  </entry>
+                  <entry name="OOXML">
+                    <mlav-policy-action>enable</mlav-policy-action>
+                  </entry>
+                  <entry name="MachO">
+                    <mlav-policy-action>enable</mlav-policy-action>
+                  </entry>
+                </mlav-engine-filebased-enabled>
+              </entry>
+            </virus>
+          </profiles>
+          <import>
+            <network>
+              <interface>
+                <member>ethernet1/1.50</member>
+                <member>ethernet1/2</member>
+                <member>ethernet1/1.10</member>
+              </interface>
+            </network>
+          </import>
+        </entry>
+      </vsys>
+    </entry>
+  </devices>
+</config>

@@ -1,0 +1,46 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2026.08.20 15:18:54 =~=~=~=~=~=~=~=~=~=~=~=
+sh logclear log buffer sh log           term pag 0term len 0sh log    clear log buffer 
+Edge-FW# clear log buffer sh log           
+Syslog logging: enabled
+    Facility: 20
+    Timestamp logging: enabled
+    Timezone: enabled
+    Logging Format: disabled
+    Hide Username logging: enabled
+    Standby logging: disabled
+    Debug-trace logging: disabled
+    Console logging: level warnings, 62 messages logged
+    Monitor logging: disabled
+    Buffer logging: level informational, 591 messages logged
+    Trap logging: level informational, facility 20, 591 messages logged
+    Global TCP syslog stats::
+        NOT_PUTABLE: 0, ALL_CHANNEL_DOWN: 0
+        CHANNEL_FLAP_CNT: 0, SYSLOG_PKT_LOSS: 0
+        PARTIAL_REWRITE_CNT: 0
+    Permit-hostdown logging: disabled
+    History logging: disabled
+    Device ID: hostname "Edge-FW"
+    Mail logging: disabled
+    ASDM logging: disabled
+Aug 20 2026 15:19:02 Edge-FW : %ASA-5-111008: User 'enable_15' executed the 'clear logging buffer' command.
+Aug 20 2026 15:19:02 Edge-FW : %ASA-5-111010: User 'enable_15', running 'CLI' from IP 0.0.0.0, executed 'clear logging buffer'
+Aug 20 2026 15:19:08 Edge-FW : %ASA-6-106100: access-list LANUSERS_IN denied tcp LANUSERS/10.1.1.51(60118) -> DMZ/10.0.1.10(3389) hit-cnt 1 first hit [0x75ad349b, 0x00000000]
+Aug 20 2026 15:19:11 Edge-FW : %ASA-6-106100: access-list LANUSERS_IN denied icmp LANUSERS/10.1.1.51(8) -> DMZ/10.0.1.10(0) hit-cnt 1 first hit [0x75ad349b, 0x00000000]
+Aug 20 2026 15:19:13 Edge-FW : %ASA-6-106100: access-list LANUSERS_IN permitted udp LANUSERS/10.1.1.51(54943) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0xf12a91a2, 0x00000000]
+Aug 20 2026 15:19:13 Edge-FW : %ASA-6-302015: Built inbound UDP connection 34 for LANUSERS:10.1.1.51/54943 (10.1.1.51/54943) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 20 2026 15:19:13 Edge-FW : %ASA-6-302016: Teardown UDP connection 34 for LANUSERS:10.1.1.51/54943 to INSIDE:10.2.1.10/53 duration 0:00:00 bytes 139 -1 -1
+Aug 20 2026 15:19:13 Edge-FW : %ASA-6-302016: Teardown UDP connection 33 for LANUSERS:10.1.1.51/51439 to INSIDE:10.2.1.10/53 duration 0:00:12 bytes 140 -1 -1
+Aug 20 2026 15:19:15 Edge-FW : %ASA-6-106100: access-list LANUSERS_IN permitted udp LANUSERS/10.1.1.51(64504) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0xf12a91a2, 0x00000000]
+Aug 20 2026 15:19:15 Edge-FW : %ASA-6-302015: Built inbound UDP connection 35 for LANUSERS:10.1.1.51/64504 (10.1.1.51/64504) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 20 2026 15:19:16 Edge-FW : %ASA-6-106100: access-list LANUSERS_IN permitted udp LANUSERS/10.1.1.51(61446) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0xf12a91a2, 0x00000000]
+Aug 20 2026 15:19:16 Edge-FW : %ASA-6-302015: Built inbound UDP connection 36 for LANUSERS:10.1.1.51/61446 (10.1.1.51/61446) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 20 2026 15:19:16 Edge-FW : %ASA-6-302016: Teardown UDP connection 36 for LANUSERS:10.1.1.51/61446 to INSIDE:10.2.1.10/53 duration 0:00:00 bytes 139 -1 -1
+Aug 20 2026 15:19:27 Edge-FW : %ASA-6-302016: Teardown UDP connection 35 for LANUSERS:10.1.1.51/64504 to INSIDE:10.2.1.10/53 duration 0:00:11 bytes 200 -1 -1
+Aug 20 2026 15:19:28 Edge-FW : %ASA-6-106100: access-list LANUSERS_IN permitted udp LANUSERS/10.1.1.51(56843) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0xf12a91a2, 0x00000000]
+Aug 20 2026 15:19:28 Edge-FW : %ASA-6-302015: Built inbound UDP connection 37 for LANUSERS:10.1.1.51/56843 (10.1.1.51/56843) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 20 2026 15:19:40 Edge-FW : %ASA-6-302016: Teardown UDP connection 37 for LANUSERS:10.1.1.51/56843 to INSIDE:10.2.1.10/53 duration 0:00:11 bytes 200 -1 -1
+Aug 20 2026 15:20:05 Edge-FW : %ASA-6-302010: 0 in use, 3 most used
+Aug 20 2026 15:20:16 Edge-FW : %ASA-6-106100: access-list LANUSERS_IN permitted udp LANUSERS/10.1.1.51(53040) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0xf12a91a2, 0x00000000]
+Aug 20 2026 15:20:16 Edge-FW : %ASA-6-302015: Built inbound UDP connection 38 for LANUSERS:10.1.1.51/53040 (10.1.1.51/53040) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 20 2026 15:20:16 Edge-FW : %ASA-6-302016: Teardown UDP connection 38 for LANUSERS:10.1.1.51/53040 to INSIDE:10.2.1.10/53 duration 0:00:00 bytes 139 -1 -1
+Edge-FW# 

@@ -1,0 +1,51 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2026.08.20 15:30:00 =~=~=~=~=~=~=~=~=~=~=~=
+sh logclear log buffer 
+Edge-FW# 
+Warning: ASAv platform license state is Unlicensed.
+Install ASAv platform license for full functionality.
+
+Edge-FW# 
+Edge-FW# clear log buffer sh log           
+Syslog logging: enabled
+    Facility: 20
+    Timestamp logging: enabled
+    Timezone: enabled
+    Logging Format: disabled
+    Hide Username logging: enabled
+    Standby logging: disabled
+    Debug-trace logging: disabled
+    Console logging: level warnings, 72 messages logged
+    Monitor logging: disabled
+    Buffer logging: level informational, 724 messages logged
+    Trap logging: level informational, facility 20, 724 messages logged
+    Global TCP syslog stats::
+        NOT_PUTABLE: 0, ALL_CHANNEL_DOWN: 0
+        CHANNEL_FLAP_CNT: 0, SYSLOG_PKT_LOSS: 0
+        PARTIAL_REWRITE_CNT: 0
+    Permit-hostdown logging: disabled
+    History logging: disabled
+    Device ID: hostname "Edge-FW"
+    Mail logging: disabled
+    ASDM logging: disabled
+Aug 20 2026 15:30:12 Edge-FW : %ASA-5-111008: User 'enable_15' executed the 'clear logging buffer' command.
+Aug 20 2026 15:30:12 Edge-FW : %ASA-5-111010: User 'enable_15', running 'CLI' from IP 0.0.0.0, executed 'clear logging buffer'
+Aug 20 2026 15:30:16 Edge-FW : %ASA-6-106100: access-list LANUSERS_IN permitted udp LANUSERS/10.1.1.51(63968) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0xf12a91a2, 0x00000000]
+Aug 20 2026 15:30:16 Edge-FW : %ASA-6-302015: Built inbound UDP connection 70 for LANUSERS:10.1.1.51/63968 (10.1.1.51/63968) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 20 2026 15:30:16 Edge-FW : %ASA-6-302016: Teardown UDP connection 70 for LANUSERS:10.1.1.51/63968 to INSIDE:10.2.1.10/53 duration 0:00:00 bytes 139 -1 -1
+Aug 20 2026 15:30:17 Edge-FW : %ASA-6-106100: access-list DMZ_IN denied tcp DMZ/10.0.1.10(51354) -> INSIDE/10.2.1.10(445) hit-cnt 1 first hit [0xcae2d9a7, 0x00000000]
+Aug 20 2026 15:30:38 Edge-FW : %ASA-6-106100: access-list DMZ_IN denied icmp DMZ/10.0.1.10(8) -> INSIDE/10.2.1.10(0) hit-cnt 1 first hit [0xcae2d9a7, 0x00000000]
+Aug 20 2026 15:30:43 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(50069) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 20 2026 15:30:43 Edge-FW : %ASA-6-302015: Built inbound UDP connection 71 for DMZ:10.0.1.10/50069 (10.0.1.10/50069) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 20 2026 15:30:44 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(54541) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 20 2026 15:30:44 Edge-FW : %ASA-6-302015: Built inbound UDP connection 72 for DMZ:10.0.1.10/54541 (10.0.1.10/54541) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 20 2026 15:30:55 Edge-FW : %ASA-6-302016: Teardown UDP connection 71 for DMZ:10.0.1.10/50069 to INSIDE:10.2.1.10/53 duration 0:00:11 bytes 240 -1 -1
+Aug 20 2026 15:30:55 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(63103) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 20 2026 15:30:55 Edge-FW : %ASA-6-302015: Built inbound UDP connection 73 for DMZ:10.0.1.10/63103 (10.0.1.10/63103) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 20 2026 15:30:56 Edge-FW : %ASA-6-302016: Teardown UDP connection 72 for DMZ:10.0.1.10/54541 to INSIDE:10.2.1.10/53 duration 0:00:11 bytes 204 -1 -1
+Aug 20 2026 15:31:07 Edge-FW : %ASA-6-106100: access-list DMZ_IN permitted udp DMZ/10.0.1.10(61829) -> INSIDE/10.2.1.10(53) hit-cnt 1 first hit [0x942ce7e8, 0x00000000]
+Aug 20 2026 15:31:07 Edge-FW : %ASA-6-302015: Built inbound UDP connection 74 for DMZ:10.0.1.10/61829 (10.0.1.10/61829) to INSIDE:10.2.1.10/53 (10.2.1.10/53) -1 -1
+Aug 20 2026 15:31:08 Edge-FW : %ASA-6-302016: Teardown UDP connection 74 for DMZ:10.0.1.10/61829 to INSIDE:10.2.1.10/53 duration 0:00:00 bytes 80 -1 -1
+Aug 20 2026 15:31:08 Edge-FW : %ASA-6-302016: Teardown UDP connection 73 for DMZ:10.0.1.10/63103 to INSIDE:10.2.1.10/53 duration 0:00:13 bytes 240 -1 -1
+Edge-FW# 
+Edge-FW# 
+Edge-FW# 
